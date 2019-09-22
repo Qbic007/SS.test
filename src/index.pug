@@ -1,0 +1,249 @@
+mixin logo(src, caption)
+    .logo
+        .logo__img-container
+            img.logo__img(src= src)
+        .logo__text-container= caption
+
+mixin article-preview(datetime, title, content)
+    article.article-preview
+        time.article-preview__datetime= datetime
+        h3.article-preview__title= title
+        .article-preview__content= content
+
+mixin main-slide(datetime, title, src, previewSrc)
+    .slider__slide-container(style="background-image: url(#{src});")
+        .slider__caption-container
+            .slider__datetime datetime
+            h3.slider__title title
+        .slider__preview
+            img.slider__preview-img(src= previewSrc)
+
+mixin acco(title, content)
+    .acco__title-container
+        h3.acco__title= title
+        .acco__arrow
+    .acco__content= content
+
+mixin input_text(label)
+    .form__input-container
+        input.form__input_text(placeholder= label type="text")
+        .form__input-error-container
+            .form__input-error Some error
+
+mixin input_checkbox(label)
+    .form__input-container
+        input.form__input_checkbox(type="checkbox")
+        label.form__input-checkbox-label= label
+        .form__input-error-container
+            .form__input-error Some error
+
+mixin input_submit(label)
+    .form__input-container
+        input.form__input_submit(type="submit" value= label)
+
+doctype html
+html(lang="ru")
+    head
+        title "SS test task"
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+        .wrapper
+            .container
+                header.header
+                    .header__left-column
+                        .header__logo-container
+                            +logo('/img.jpg', 'Logotype')
+                        .header__language-container
+                            .language
+                                select.language__select
+                                    option.language__option in English
+                                    option.language__option in Russian
+                    .header__right-column
+                        nav.menu
+                            ul.menu__list
+                                li.menu__item
+                                    a.menu__link(href='#') Features
+                                    .menu__marker New
+                                li.menu__item
+                                    a.menu__link(href='#') Blog
+                                li.menu__item
+                                    a.menu__link(href='#') About
+                main
+                    section.caption
+                        .caption__title-container
+                            h2.title How I Lost The Secret Of Dazzling Success For 20 Years
+                        button.caption__button Explore now
+                        span.caption__tip 6 Powerful Tips To Creating Testimonials That Sell Your Products Fast
+                    section.features
+                        .feature__container
+                            ul.features__list
+                                li.features__item
+                                    .features__item-container
+                                        .features__img-container
+                                            .features__img
+                                            +article-preview('04 Jul 2018',
+                                            'Research In Advertising',
+                                            '<p>To a general advertiser outdoor advertising is worthy of ' +
+                                            'consideration. Outdoor advertising is considered as the oldest form ' +
+                                            'of advertising.</p>')
+                                li.features__item
+                                    .features__item-container
+                                        .features__img-container
+                                            .features__img
+                                            +article-preview('25 Aug 2018',
+                                            'Welcome To Desiclassifieds Free Classifieds Free Ads Free Advertisement',
+                                            '<p>There are several ways people can make money online. From selling ' +
+                                            'products to advertising</p>')
+                                li.features__item
+                                    .features__item-container
+                                        .features__img-container
+                                            .features__img
+                                            +article-preview('29 Jun 2018',
+                                            'Free Classifieds Using Them To Promote Your Stuff Online',
+                                            '<p>Moreover the striking, brilliant and vivid colors are the reason ' +
+                                            'why we are attracted to the posters that we see.</p>')
+                        .popular__contaner
+                            .popular__caption-line
+                                .popular__title-container
+                                    h3.popular__title
+                                .popular__tabs-container
+                                    ul.popular__tabs
+                                        li.popular__tab Today
+                                        li.popular__tab This week
+                                        li.popular__tab Month
+                            ul.popular__articles
+                                li.popular__article
+                                    +article-preview('29 Jun 2018',
+                                    'It S Classified How To Utilize Free Classified Ad Sites To Boost Business',
+                                    '<p>Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.</p>')
+                                li.popular__article
+                                    +article-preview('29 Jun 2018',
+                                    '12 Handy Tips For Generating Leads Through Cold Calling',
+                                    '<p>To a general advertiser outdoor advertising is worthy of consideration. Outdoor advertising is considered as the oldest form of advertising.</p>')
+                                li.popular__article
+                                    +article-preview('29 Jun 2018',
+                                    'Make Money Online Through Advertising',
+                                    '<p>There are several ways people can make money online. From selling products to advertising.</p>')
+
+                    section.slider
+                        .swiper-wrapper
+                            .swiper-slide
+                                +main-slide('27 Nov 2018',
+                                'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
+                                '/img.jpg',
+                                '/img.jpg')
+                            .swiper-slide
+                                +main-slide('27 Nov 2018',
+                                'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
+                                '/img.jpg',
+                                '/img.jpg')
+                            .swiper-slide
+                                +main-slide('27 Nov 2018',
+                                'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
+                                '/img.jpg',
+                                '/img.jpg')
+                            button.slider__button-left
+                            button.slider__button-right
+                    section.blog
+                        .blog__main
+                            .blog__title
+                                h2.title How I Lost The Secret Of Dazzling Success For 20 Years
+                            .author
+                                .author-img-container
+                                    img.author-img(src="/img.jpg")
+                                .author__caption-container
+                                    .author__name
+                                    .author__info
+                            .blog__content-container.
+                                <p>
+                                    There is such a lot of talk going around about branding, but what exactly is your brand and how do you use it to help you reach more people and market your products or services? Your brand is the core of your marketing, the central theme around your products and services.
+                                </p>
+                                <p>
+                                    Your brand is not your Logo or your Company Name, unless of course you are Microsoft or the Yellow Pages online directory.
+                                </p>
+                                <ul>
+                                    <li>Study 800 Numbers Still Popular With Advertisers</li>
+                                    <li>A Right Media Mix Can Make The Difference</li>
+                                    <li>Advertise No Matter If You Are Big Or Small</li>
+                                </ul>
+                                <h2>Getting Free Publicity For Your Business</h2>
+                                <p>
+                                    For people to come and hire you, or buy from you in droves, your brand needs to be crystal clear, attractive, exciting and powerful. In fact your brand needs to be powerful enough to rouse your customers into action, and at the same time it needs to actively express you, what you’re about and your uniqueness.
+                                </p>
+                                <p>
+                                    Once you’re sure of your brand you also gain a tangible and easy way of talking to people about what you do. It makes it so much easier to do your marketing when you have it clear in your mind what it is you’re selling in the first place. When you’re creating your brand you are creating a memorable marketing message that will inspire people to take action and choose you over your competitors.
+                                </p>
+                            .blog__load-more-container
+                                button.load__more Load more
+                        aside.blog_aside
+                            .acco
+                                ul.acco__list
+                                    li.acco__item
+                                        +acco('The Function Of The Logo',
+                                        '<p>Forget Ebay and other forms of advertising for your property that costs ' +
+                                        'you hard earned money. Why not do it all for free? Investment Assets ' +
+                                        'Properties have ready several locations around the world to take your free ' +
+                                        'listings for any luxury property you have.</p>')
+                                    li.acco__item
+                                        +acco('The Function Of The Logo',
+                                        '<p>Forget Ebay and other forms of advertising for your property that costs ' +
+                                        'you hard earned money. Why not do it all for free? Investment Assets ' +
+                                        'Properties have ready several locations around the world to take your free ' +
+                                        'listings for any luxury property you have.</p>')
+                                    li.acco__item
+                                        +acco('The Function Of The Logo',
+                                        '<p>Forget Ebay and other forms of advertising for your property that costs ' +
+                                        'you hard earned money. Why not do it all for free? Investment Assets ' +
+                                        'Properties have ready several locations around the world to take your free ' +
+                                        'listings for any luxury property you have.</p>')
+                                    li.acco__item
+                                        +acco('The Function Of The Logo',
+                                        '<p>Forget Ebay and other forms of advertising for your property that costs ' +
+                                        'you hard earned money. Why not do it all for free? Investment Assets ' +
+                                        'Properties have ready several locations around the world to take your free ' +
+                                        'listings for any luxury property you have.</p>')
+                                    li.acco__item
+                                        +acco('The Function Of The Logo',
+                                        '<p>Forget Ebay and other forms of advertising for your property that costs ' +
+                                        'you hard earned money. Why not do it all for free? Investment Assets ' +
+                                        'Properties have ready several locations around the world to take your free ' +
+                                        'listings for any luxury property you have.</p>')
+                            .pic-preview(style="background-image: url(/img.jpg);")
+                                time.pic-preview__datetime 27 Jul 2018
+                                h3.pic-preview__title Why Do You Need To Join An Affiliate Marketing Network
+                    section.about
+                        .about__title-container
+                            h2.title Choosing The Best Audio Player Software For Your Computer
+                        .about__caption-container If you having trouble about creating a good 4 color poster print, a 4 color printing company that has 4 color poster printing service may be able to help you made your poster.
+                        .about__form-container
+                            form.form
+                                +input_text('First name')
+                                +input_text('Last name')
+                                +input_text('Email')
+                                +input_text('Address')
+                                +input_checkbox('I confirm and agree to the processing of my data and information about myself')
+                                +input_submit('Send report')
+                footer.footer
+                    .footer__left-column
+                        .footer__logo-container
+                            +logo('/img.jpg', 'Logotype')
+                        nav.footer__menu
+                            ul.footer__menu-list
+                                li.footer__menu-item
+                                    a.footer__menu-link(href='#') What’s new
+                                    a.footer__menu-link(href='#') Blog
+                                    a.footer__menu-link(href='#') Explore
+                                    a.footer__menu-link(href='#') About
+                                    a.footer__menu-link(href='#') All features
+                                    a.footer__menu-link(href='#') Documentation
+                                    a.footer__menu-link(href='#') Price
+                                    a.footer__menu-link(href='#') Contact us
+                    .footer__right-column
+                        address.address
+                            address.address__location
+                                a.address__location-link(href='#') 0547 Leola Summit Apt. 220
+                            address.address__phone 582-261-9142
+                                a.address__phone-link(href='tel:582-261-9142')
+                            address.address__email mozelle_heathcote@hotmail.com
+                                a.address__email-link(href='mailto:mozelle_heathcote@hotmail.com')

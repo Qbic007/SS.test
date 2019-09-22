@@ -1,0 +1,25 @@
+{
+  "name": "SS test",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "pug": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qbic007/SS.test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qbic007/SS.test/issues"
+  },
+  "homepage": "https://github.com/Qbic007/SS.test#readme"
+}
