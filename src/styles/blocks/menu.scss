@@ -1,0 +1,13 @@
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,35 @@
+//colors
+$color-text-dark: #373b52;
+$color-text-dark-opacity: #9a9eb7;
+$color-text-light-opacity: #f5f5fa;
+$color-text-light: #f5f5fa;
+
+// setups
+//@import "misc/mixins";
+@import "misc/fonts";
+@import "misc/layout";
+
+// blocks
+@import "blocks/icon";
+@import "blocks/logo";
+@import "blocks/datetime";
+@import "blocks/article-title";
+@import "blocks/wrapper";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/title";
+@import "blocks/caption";
+@import "blocks/features";
+@import "blocks/popular";
+@import "blocks/slider";
+@import "blocks/blog";
+@import "blocks/author";
+@import "blocks/acco";
+@import "blocks/pic-preview";
+@import "blocks/about";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/address";
+
+//libs
+//@import "libs/swiper";

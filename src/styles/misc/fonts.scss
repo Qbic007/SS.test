@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+@mixin montserrat() {
+	font-family: 'Montserrat', sans-serif;
+}
+
+@mixin lora($style: light) {
+	font-family: 'Lora', serif;
+}

@@ -1,0 +1,8 @@
+.datetime {
+  font-size: 12px;
+  color: $color-text-dark-opacity;
+
+  &_light {
+    color: $color-text-light-opacity;
+  }
+}

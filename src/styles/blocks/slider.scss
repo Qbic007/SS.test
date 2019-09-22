@@ -1,0 +1,26 @@
+.slider {
+  position: relative;
+}
+
+.slider__button-left, .slider__button-right {
+  position: absolute;
+}
+
+.slider__slide-container {
+  position: relative;
+}
+
+.slider__caption-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.slider__title {
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 32px;
+  color: $color-text-light;
+  font-weight: 800;
+  text-transform: capitalize;
+}

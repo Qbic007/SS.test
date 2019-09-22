@@ -1,0 +1,21 @@
+.popular {
+
+}
+
+.popular__caption-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular__tabs {
+  display: flex;
+}
+
+.popular__articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular__article {
+  width: 33%;
+}

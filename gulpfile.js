@@ -29,13 +29,9 @@ task('clean', () => {
         .pipe(rm())
 });
 
-task('lint:template', () => {
-    return src('./*.pug')
-        .pipe(pugLinter({reporter: 'default'}))
-});
-
 task('copy:html', () => {
     return src(`${SRC_PATH}/*.pug`)
+        .pipe(pugLinter({reporter: 'default'}))
         .pipe(pug())
         .pipe(dest(DIST_PATH))
         .pipe(reload({ stream: true }));
@@ -50,12 +46,6 @@ task('copy:fonts', () => {
 task('copy:images', () => {
     return src(`${SRC_PATH}/images/**/*`)
         .pipe(dest(`${DIST_PATH}/images/`))
-        .pipe(reload({ stream: true }));
-});
-
-task('copy:videos', () => {
-    return src(`${SRC_PATH}/videos/*`)
-        .pipe(dest(`${DIST_PATH}/videos/`))
         .pipe(reload({ stream: true }));
 });
 
@@ -122,8 +112,8 @@ task('server', () => {
 });
 
 task('watch', () => {
+    watch('./src/*.pug', series('copy:html'));
     watch('./src/styles/**/*.scss', series('styles'));
-    watch('./src/*.html', series('copy:html'));
     watch('./src/scripts/*.js', series('scripts'));
     watch('./src/images/icons/*.svg', series('icons'));
 });
@@ -132,7 +122,7 @@ task('watch', () => {
 task('default',
     series(
         'clean',
-        parallel('lint:template', 'copy:html', 'copy:fonts', 'copy:images', 'copy:videos', 'styles', 'scripts', 'icons'),
+        parallel('copy:html', 'copy:fonts', 'copy:images', 'styles', 'scripts', 'icons'),
         parallel('watch', 'server')
     )
 );
@@ -140,5 +130,5 @@ task('default',
 task('build',
     series(
         'clean',
-        parallel('lint:template', 'copy:html', 'copy:fonts', 'copy:images', 'copy:videos', 'styles', 'scripts', 'icons'))
+        parallel('copy:html', 'copy:fonts', 'copy:images', 'styles', 'scripts', 'icons'))
 );
