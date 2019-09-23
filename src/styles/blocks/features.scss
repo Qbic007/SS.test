@@ -1,7 +1,28 @@
+.features {
+  margin-bottom: $pt64;
+}
+
+.feature__container {
+  margin-bottom: $pt40;
+}
+
 .features__list {
   display: flex;
+  justify-content: space-between;
 }
 
 .features__item {
-  width: 33%;
+  width: 31%;
+}
+
+.features__img-container {
+  border-radius: 2px;
+  box-shadow: 0 8px 24px rgba(57,96,204,0.48);
+  height: auto;
+  margin-bottom: $pt8;
+}
+
+.features__img {
+    display: block;
+    margin: 0 auto;
 }

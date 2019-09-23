@@ -7,8 +7,10 @@ mixin logo()
 
 mixin article-preview(datetime, title, content)
     article.article-preview
-        time.datetime= datetime
-        h3.article-title= title
+        .article-preview__datetime-container
+            time.datetime= datetime
+        .article-preview__article-title-container
+            h3.article-title= title
         .article-preview__content= content
 
 mixin main-slide(datetime, title, src, previewSrc)
@@ -41,6 +43,8 @@ mixin input_checkbox(label)
 mixin input_submit(label)
     .form__input-container
         input.form__input_submit(type="submit" value= label)
+
+- var shortText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi consequuntur cumque deleniti distinctio eligendi esse illum natus necessitatibus vero. Excepturi facilis fugiat, laboriosam minima optio possimus temporibus? Ducimus, labore!';
 
 doctype html
 html(lang="ru")
@@ -87,48 +91,43 @@ html(lang="ru")
                                                 img.features__img(src='images/content.jpg')
                                             +article-preview('04 Jul 2018',
                                             'Research In Advertising',
-                                            '<p>To a general advertiser outdoor advertising is worthy of ' +
-                                            'consideration. Outdoor advertising is considered as the oldest form ' +
-                                            'of advertising.</p>')
+                                            shortText)
                                     li.features__item
                                         .features__item-container
                                             .features__img-container
                                                 img.features__img(src='images/content.jpg')
-                                            +article-preview('25 Aug 2018',
-                                            'Welcome To Desiclassifieds Free Classifieds Free Ads Free Advertisement',
-                                            '<p>There are several ways people can make money online. From selling ' +
-                                            'products to advertising</p>')
+                                            +article-preview('04 Jul 2018',
+                                            'Research In Advertising',
+                                            shortText)
                                     li.features__item
                                         .features__item-container
                                             .features__img-container
                                                 img.features__img(src='images/content.jpg')
                                             +article-preview('29 Jun 2018',
                                             'Free Classifieds Using Them To Promote Your Stuff Online',
-                                            '<p>Moreover the striking, brilliant and vivid colors are the reason ' +
-                                            'why we are attracted to the posters that we see.</p>')
-                            .popular__contaner
+                                            shortText)
+                            .popular__container
                                 .popular__caption-line
                                     .popular__title-container
                                         h3.popular__title Popular
                                     .popular__tabs-container
                                         ul.popular__tabs
-                                            li.popular__tab Today
+                                            li.popular__tab.popular__tab_active Today
                                             li.popular__tab This week
                                             li.popular__tab Month
-                                ul.popular__articles
-                                    li.popular__article
+                                ul.features__list
+                                    li.features__item
                                         +article-preview('29 Jun 2018',
                                         'It S Classified How To Utilize Free Classified Ad Sites To Boost Business',
-                                        '<p>Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.</p>')
-                                    li.popular__article
+                                        shortText)
+                                    li.features__item
                                         +article-preview('29 Jun 2018',
                                         '12 Handy Tips For Generating Leads Through Cold Calling',
-                                        '<p>To a general advertiser outdoor advertising is worthy of consideration. Outdoor advertising is considered as the oldest form of advertising.</p>')
-                                    li.popular__article
+                                        shortText)
+                                    li.features__item
                                         +article-preview('29 Jun 2018',
                                         'Make Money Online Through Advertising',
-                                        '<p>There are several ways people can make money online. From selling products to advertising.</p>')
-
+                                        shortText)
                     section.slider
                         .swiper-wrapper
                             .swiper-slide

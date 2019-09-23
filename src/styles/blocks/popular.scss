@@ -1,21 +1,41 @@
-.popular {
-
-}
-
 .popular__caption-line {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: $pt32;
+}
+
+.popular__title-container {
+  flex: 1;
+  border-bottom: 1px $color-separator-line solid;
+  padding-bottom: $pt8;
+}
+
+.popular__title {
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 32px;
+  color: $color-text-dark;
+  font-weight: 800;
 }
 
 .popular__tabs {
   display: flex;
 }
 
-.popular__articles {
-  display: flex;
-  justify-content: space-between;
-}
+.popular__tab {
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px $color-separator-line solid;
+  padding-bottom: $pt16;
+  padding-left: $pt16;
+  padding-right: $pt16;
 
-.popular__article {
-  width: 33%;
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &_active {
+      border-bottom: 1px $color-magenta solid;
+    }
 }

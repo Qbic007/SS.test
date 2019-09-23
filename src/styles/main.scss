@@ -1,4 +1,5 @@
 //colors
+$color-separator-line: #e1e2eb;
 $color-text-dark: #373b52;
 $color-text-dark-opacity: #9a9eb7;
 $color-text-light-opacity: #f5f5fa;
@@ -29,7 +30,6 @@ $pt160: 160px;
 $pt168: 168px;
 
 // setups
-//@import "misc/mixins";
 @import "misc/fonts";
 @import "misc/layout";
 
@@ -39,6 +39,7 @@ $pt168: 168px;
 @import "blocks/logo";
 @import "blocks/datetime";
 @import "blocks/article-title";
+@import "blocks/article-preview";
 @import "blocks/wrapper";
 @import "blocks/header";
 @import "blocks/menu";
