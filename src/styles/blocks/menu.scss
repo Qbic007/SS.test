@@ -1,13 +1,29 @@
 .menu__list {
   display: flex;
+  line-height: $pt24;
+  font-weight: 600;
 }
 
 .menu__item {
   position: relative;
-}
+  margin-left: $pt64;
 
-.menu__marker {
-  position: absolute;
-  top: 0;
-  left: 0;
+  &_new:before {
+    content: 'New';
+    position: absolute;
+    top: -4px;
+    right: -$pt32;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: $color-magenta;
+    width: 28px;
+    height: $pt16;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

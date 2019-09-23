@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  padding: $pt32 $pt64;
 }
 
 .header__left-column {

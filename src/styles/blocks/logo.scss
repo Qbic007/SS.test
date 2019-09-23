@@ -2,7 +2,19 @@
   display: flex;
 }
 
+.header__logo-container {
+  padding-right: $pt64;
+}
+
 .logo__img-container {
   width: 24px;
   height: 24px;
+}
+
+.logo__img-container {
+  margin-right: $pt8;
+}
+
+.logo__text-container {
+  font-weight: 600;
 }

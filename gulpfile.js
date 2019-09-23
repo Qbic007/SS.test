@@ -43,6 +43,12 @@ task('copy:fonts', () => {
         .pipe(reload({ stream: true }));
 });
 
+task('copy:favicon', () => {
+    return src(`${SRC_PATH}/favicon.ico`)
+        .pipe(dest(`${DIST_PATH}/`))
+        .pipe(reload({ stream: true }));
+});
+
 task('copy:images', () => {
     return src(`${SRC_PATH}/images/**/*`)
         .pipe(dest(`${DIST_PATH}/images/`))
@@ -122,7 +128,7 @@ task('watch', () => {
 task('default',
     series(
         'clean',
-        parallel('copy:html', 'copy:fonts', 'copy:images', 'styles', 'scripts', 'icons'),
+        parallel('copy:html', 'copy:fonts', 'copy:images', 'copy:favicon', 'styles', 'scripts', 'icons'),
         parallel('watch', 'server')
     )
 );
@@ -130,5 +136,5 @@ task('default',
 task('build',
     series(
         'clean',
-        parallel('copy:html', 'copy:fonts', 'copy:images', 'styles', 'scripts', 'icons'))
+        parallel('copy:html', 'copy:fonts', 'copy:images', 'copy:favicon', 'styles', 'scripts', 'icons'))
 );
