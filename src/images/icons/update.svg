@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-466 -2757L974 -2757L974 1214L-466 1214Z" />
+		</clipPath>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
+			<path d="M17.61 6.35C16.19 4.9 14.24 4 12.07 4C7.75 4 4.25 7.58 4.25 12C4.25 16.42 7.75 20 12.07 20C15.73 20 18.77 17.45 19.64 14L17.61 14C16.8 16.33 14.63 18 12.07 18C8.83 18 6.2 15.31 6.2 12C6.2 8.69 8.83 6 12.07 6C13.7 6 15.15 6.69 16.21 7.78L13.05 11L19.91 11L19.91 4L17.61 6.35Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #373b52 } 
+	</style>
+	<g id="main" clip-path="url(#cp1)">
+		<g id="button/solid+icon/normal">
+			<g id="icon/navigation/apps_24px">
+				<g id="Mask by icon/navigation/refresh_24px" clip-path="url(#cp2)">
+					<g id="↳ Color">
+						<path id="Rectangle" class="shp0" d="M0.33 0L23.83 0L23.83 24L0.33 24L0.33 0Z" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

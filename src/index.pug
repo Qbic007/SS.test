@@ -23,8 +23,7 @@ mixin main-slide(datetime, title, src, previewSrc)
 
 mixin acco(title, content)
     .acco__title-container
-        h3.article-title= title
-        .acco__arrow
+        h3.acco__title= title
     .acco__content= content
 
 mixin input_text(label)
@@ -153,12 +152,13 @@ html(lang="ru")
                             .blog__main
                                 .blog__title
                                     h2.title How I Lost The Secret Of Dazzling Success For 20 Years
-                                .author
-                                    .author-img-container
-                                        img.author-img(src="images/author.png")
-                                    .author__caption-container
-                                        .article-title Harold Holland
-                                        .author__info Editor in chief, Entrepreneur mag. Host of the podcast Pessimists Archive.
+                                .blog__author-container
+                                    .author
+                                        .author-img-container
+                                            img.author-img(src="images/author.png")
+                                        .author__caption-container
+                                            .article-title Harold Holland
+                                            .author__info Editor in chief, Entrepreneur mag. Host of the podcast Pessimists Archive.
                                 .blog__content-container.
                                     <p>
                                         There is such a lot of talk going around about branding, but what exactly is your brand and how do you use it to help you reach more people and market your products or services? Your brand is the core of your marketing, the central theme around your products and services.
@@ -185,37 +185,25 @@ html(lang="ru")
                                     ul.acco__list
                                         li.acco__item.active
                                             +acco('The Function Of The Logo',
-                                            '<p>Forget Ebay and other forms of advertising for your property that costs ' +
-                                            'you hard earned money. Why not do it all for free? Investment Assets ' +
-                                            'Properties have ready several locations around the world to take your free ' +
-                                            'listings for any luxury property you have.</p>')
+                                            shortText)
                                         li.acco__item
                                             +acco('The Function Of The Logo',
-                                            '<p>Forget Ebay and other forms of advertising for your property that costs ' +
-                                            'you hard earned money. Why not do it all for free? Investment Assets ' +
-                                            'Properties have ready several locations around the world to take your free ' +
-                                            'listings for any luxury property you have.</p>')
+                                            shortText)
                                         li.acco__item
                                             +acco('The Function Of The Logo',
-                                            '<p>Forget Ebay and other forms of advertising for your property that costs ' +
-                                            'you hard earned money. Why not do it all for free? Investment Assets ' +
-                                            'Properties have ready several locations around the world to take your free ' +
-                                            'listings for any luxury property you have.</p>')
+                                            shortText)
                                         li.acco__item
                                             +acco('The Function Of The Logo',
-                                            '<p>Forget Ebay and other forms of advertising for your property that costs ' +
-                                            'you hard earned money. Why not do it all for free? Investment Assets ' +
-                                            'Properties have ready several locations around the world to take your free ' +
-                                            'listings for any luxury property you have.</p>')
+                                            shortText)
                                         li.acco__item
                                             +acco('The Function Of The Logo',
-                                            '<p>Forget Ebay and other forms of advertising for your property that costs ' +
-                                            'you hard earned money. Why not do it all for free? Investment Assets ' +
-                                            'Properties have ready several locations around the world to take your free ' +
-                                            'listings for any luxury property you have.</p>')
-                                .pic-preview(style="background-image: url(images/content.jpg);")
-                                    time.datetime.datetime_light 27 Jul 2018
-                                    h3.pic-preview__title Why Do You Need To Join An Affiliate Marketing Network
+                                            shortText)
+                                .pic-preview
+                                    .pic-preview__img-container
+                                        img.pic-preview__img(src='images/content.jpg')
+                                        .pic-preview__caption
+                                            time.datetime.datetime_light 27 Jul 2018
+                                            h3.pic-preview__title Why Do You Need To Join An Affiliate Marketing Network
                         section.about
                             .about__title-container
                                 h2.title Choosing The Best Audio Player Software For Your Computer

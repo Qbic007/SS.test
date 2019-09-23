@@ -12,7 +12,7 @@
 }
 
 .features__item {
-  width: 31%;
+  width: 32%;
 }
 
 .features__img-container {
@@ -24,5 +24,6 @@
 
 .features__img {
     display: block;
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
 }

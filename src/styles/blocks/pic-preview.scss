@@ -1,6 +1,13 @@
 .pic-preview {
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.pic-preview__caption {
+  position: absolute;
+  left: $pt24;
+  bottom: $pt32;
 }
 
 .pic-preview__title {

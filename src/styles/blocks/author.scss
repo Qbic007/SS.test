@@ -1,3 +1,13 @@
 .author {
   display: flex;
 }
+
+.author-img-container {
+  margin-right: $pt8;
+}
+
+.author__info {
+  font-size: 12px;
+  color: $color-text-dark-opacity;
+  font-weight: 400;
+}
