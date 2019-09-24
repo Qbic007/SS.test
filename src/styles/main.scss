@@ -28,6 +28,8 @@ $pt144: 144px;
 $pt152: 152px;
 $pt160: 160px;
 $pt168: 168px;
+$column: 32%;
+$column2: 66%;
 
 // setups
 @import "misc/fonts";
@@ -46,14 +48,14 @@ $pt168: 168px;
 @import "blocks/menu";
 @import "blocks/title";
 @import "blocks/caption";
-@import "blocks/features";
+@import "blocks/posts";
 @import "blocks/popular";
 @import "blocks/slider";
 @import "blocks/blog";
 @import "blocks/author";
 @import "blocks/acco";
 @import "blocks/pic-preview";
-@import "blocks/about";
+@import "blocks/feedback";
 @import "blocks/form";
 @import "blocks/footer";
 @import "blocks/address";

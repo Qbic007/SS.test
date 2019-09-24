@@ -1,0 +1,28 @@
+.feedback {
+  flex-direction: column;
+  padding-top: $pt64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-container {
+  width: $column2;
+}
+
+.feedback__caption-container {
+  text-align: center;
+  margin-bottom: $pt32;
+}
+
+.feedback__title-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: $pt32;
+}
+
+.feedback__form-container {
+  display: flex;
+  justify-content: center;
+}

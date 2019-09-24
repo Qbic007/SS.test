@@ -1,7 +1,6 @@
 .blog {
   display: flex;
   justify-content: space-between;
-  margin-bottom: $pt32;
   padding-top: $pt72;
   padding-bottom: $pt64;
   padding-left: $pt80;
@@ -14,7 +13,7 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
-  width: 66%;
+  width: $column2;
 }
 
 .blog__title {
@@ -87,5 +86,5 @@
 }
 
 .blog_aside {
-  width: 32%;
+  width: $column;
 }

@@ -1,28 +1,28 @@
-.features {
-  margin-bottom: $pt64;
+.posts {
+  padding-bottom: $pt64;
 }
 
-.feature__container {
+.posts__container {
   margin-bottom: $pt40;
 }
 
-.features__list {
+.posts__list {
   display: flex;
   justify-content: space-between;
 }
 
-.features__item {
-  width: 32%;
+.posts__item {
+  width: $column;
 }
 
-.features__img-container {
+.posts__img-container {
   border-radius: 2px;
   box-shadow: 0 8px 24px rgba(57,96,204,0.48);
   height: auto;
   margin-bottom: $pt8;
 }
 
-.features__img {
+.posts__img {
     display: block;
     margin: 0;
     width: 100%;
