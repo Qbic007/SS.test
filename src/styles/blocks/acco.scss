@@ -12,6 +12,11 @@
 .acco__item {
   padding: $pt24;
   border: 1px solid $color-separator-line;
+  border-bottom: none;
+  
+  &:last-child {
+    border-bottom: 1px solid $color-separator-line;
+  }
 
   &.active > .acco__content {
     height: auto;

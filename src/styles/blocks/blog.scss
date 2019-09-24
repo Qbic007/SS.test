@@ -1,7 +1,12 @@
 .blog {
   display: flex;
   justify-content: space-between;
-  margin-bottom: $pt64;
+  margin-bottom: $pt32;
+  padding-top: $pt72;
+  padding-bottom: $pt64;
+  padding-left: $pt80;
+  padding-right: $pt80;
+  border-bottom: 1px solid $color-separator-line;
 }
 
 .blog__main{

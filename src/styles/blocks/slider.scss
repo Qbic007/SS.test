@@ -1,6 +1,7 @@
 .slider {
   position: relative;
-  margin-bottom: $pt72;
+  border-top: 1px solid $color-separator-line;
+  border-bottom: 1px solid $color-separator-line;
 }
 
 .slider__button-left, .slider__button-right {
