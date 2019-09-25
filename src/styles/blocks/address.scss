@@ -2,3 +2,54 @@
   display: flex;
   flex-direction: column;
 }
+
+.address__location {
+  margin-bottom: $pt8;
+}
+
+.address__location-link {
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: '';
+    height: 24px;
+    width: 24px;
+    background-image: url(images/icons/address.svg);
+    margin-right: 8px;
+  }
+}
+
+.address__phone {
+  margin-bottom: $pt8;
+}
+
+.address__phone-link {
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: '';
+    height: 24px;
+    width: 24px;
+    background-image: url(images/icons/phone.svg);
+    margin-right: 8px;
+  }
+}
+
+.address__email {
+  margin-bottom: $pt8;
+}
+
+.address__email-link {
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: '';
+    height: 24px;
+    width: 24px;
+    background-image: url(images/icons/mail.svg);
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 17" width="24" height="17">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-28 -21L1412 -21L1412 779L-28 779Z" />
+		</clipPath>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
+			<path d="M3 11L21 11L21 12.33L3 12.33L3 11ZM3 7.67L21 7.67L21 9L3 9L3 7.67ZM21 4.33L21 5.67L3 5.67L3 4.33L21 4.33Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #373b52 } 
+	</style>
+	<g id="main--screen-size" clip-path="url(#cp1)">
+		<g id="nav/side/left">
+			<g id="icon/navigation/menu_24px">
+				<g id="Mask by icon/navigation/menu_24px" clip-path="url(#cp2)">
+					<g id="↳ Color">
+						<path id="Rectangle" class="shp0" d="M0 0.33L24 0.33L24 16.33L0 16.33L0 0.33Z" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

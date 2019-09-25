@@ -17,13 +17,6 @@ body {
   color: $color-text-dark;
 }
 
-.wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-}
-
 // tag styles reset
 h1,
 h2,
@@ -81,4 +74,8 @@ address {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input:-internal-autofill-selected {
+  background-color: none !important;
 }

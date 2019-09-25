@@ -1,10 +1,19 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  padding-top: $pt64;
+  padding-bottom: $pt72;
+  border-top: 1px solid $color-separator-line;
+  font-size: 12px;
+  line-height: 24px;
+  color: $color-text-dark;
+  font-weight: 600;
 }
 
 .footer__left-column {
   display: flex;
+  flex: 1;
+  padding-left: $pt80;
 }
 
 .footer__menu-list {
@@ -14,9 +23,15 @@
 
 .footer__menu-item {
   width: 50%;
+  margin-bottom: $pt8;
 }
 
 .footer__right-column {
   display: flex;
   justify-content: center;
+  flex: 1;
+}
+
+.footer__logo-container {
+  margin-right: $pt80;
 }

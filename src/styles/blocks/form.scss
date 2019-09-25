@@ -43,6 +43,8 @@
   line-height: 12px;
   color: $color-text-dark;
   font-weight: 600;
+  height: $pt40;
+  transform: translateY(-20px);
 
   &.form__input-error-container_show {
     display: block;
@@ -71,4 +73,26 @@
     margin-right: $pt8;
     transform: translateY(-2px);
   }
+}
+
+.form__input-checkbox-label {
+  font-size: 12px;
+  color: $color-text-dark;
+  font-weight: 600;
+}
+
+.form__input_submit {
+  vertical-align: center;
+  padding: 26px $pt24 20px $pt72;
+  height: 24px;
+  outline: none;
+  border: 1px solid $color-separator-line;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-magenta;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0 8px 36px rgba(57,96,204,0.48);
 }
