@@ -53,11 +53,12 @@
   &:before {
     content: '';
     position: absolute;
-    height: 3px;
-    width: 3px;
+    height: 6px;
+    width: 6px;
     background-color: white;
-    left: 0;
-    top: -50%;
+    left: -3px;
+    top: 50%;
+    transform: translateY(-3px) rotate(45deg);
   }
 }
 
@@ -83,10 +84,10 @@
 
 .form__input_submit {
   vertical-align: center;
-  padding: 26px $pt24 20px $pt72;
-  height: 24px;
+  padding: 10px $pt24 12px $pt72;
   outline: none;
   border: 1px solid $color-separator-line;
+  text-align: left;
   width: 100%;
   font-size: 16px;
   line-height: 24px;

@@ -76,6 +76,6 @@ a {
   color: inherit;
 }
 
-input:-internal-autofill-selected {
-  background-color: none !important;
+input[type='submit'], input[type='checkbox'], label {
+  cursor: pointer;
 }

@@ -1,15 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: $pt32 $pt64;
 }
 
 .header__left-column {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header__right-column {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
