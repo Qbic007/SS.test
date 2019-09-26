@@ -38,10 +38,10 @@
   position: relative;
   display: flex;
   content: '';
-  height: 24px;
-  width: 24px;
+  height: $pt24;
+  width: $pt24;
   background-repeat: no-repeat;
-  background-size: 24px 24px;
+  background-size: $pt24 $pt24;
 
   &_menu {
     background-image: url(images/icons/menu.svg);
@@ -57,6 +57,10 @@
 
   &_copyright {
     background-image: url(images/icons/copyright.svg);
+  }
+
+  &_login {
+    width: $pt40;
   }
 }
 
@@ -74,4 +78,16 @@
 
 .aside__socials-link {
   margin-bottom: $pt16;
+}
+
+.aside__login-img-container {
+  width: $pt40;
+  height: $pt40;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.aside__login-img {
+  height: 100%;
+  width: 100%;
 }
