@@ -1,23 +1,29 @@
-.aside {
-  position: fixed;
+.aside__box {
+  position: absolute;
   top: 0;
   bottom: 0;
-  width: $pt80;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  &_left {
-    left: 0;
-  }
+  max-width: $pt80;
+  width: 5vw;
 
   &_right {
     right: 0;
   }
 }
 
+.aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  max-width: $pt80;
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .aside__container {
-  width: $pt80;
+  max-width: $pt80;
+  width: 5vw;
   height: $pt80;
   display: flex;
   justify-content: center;
@@ -35,7 +41,7 @@
   height: 24px;
   width: 24px;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 24px 24px;
 
   &_menu {
     background-image: url(images/icons/menu.svg);

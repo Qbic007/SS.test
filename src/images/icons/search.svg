@@ -1,22 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 17" width="24" height="17">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
 	<defs>
 		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-			<path d="M-1388 -69L52 -69L52 731L-1388 731Z" />
+			<path d="M-1388 -103.2L52 -103.2L52 1088.1L-1388 1088.1L-1388 -103.2Z" />
 		</clipPath>
 		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
-			<path d="M20.74 13.17L19.25 14.16L14.25 10.84L14.25 10.31L13.98 10.12C12.84 10.78 11.36 11.17 9.75 11.17C6.16 11.17 3.25 9.23 3.25 6.84C3.25 4.44 6.16 2.5 9.75 2.5C13.34 2.5 16.25 4.44 16.25 6.84C16.25 7.91 15.66 8.9 14.68 9.66L14.96 9.84L15.75 9.84L20.74 13.17ZM14.25 6.84C14.25 5.18 12.24 3.84 9.75 3.84C7.26 3.84 5.25 5.18 5.25 6.84C5.25 8.5 7.26 9.84 9.75 9.84C12.24 9.84 14.25 8.5 14.25 6.84Z" />
+			<path d="M20.74 19.16L19.25 20.64L14.25 15.69L14.25 14.9L13.98 14.63C12.84 15.6 11.36 16.18 9.75 16.18C6.16 16.18 3.25 13.29 3.25 9.73C3.25 6.16 6.16 3.28 9.75 3.28C13.34 3.28 16.25 6.16 16.25 9.73C16.25 11.33 15.66 12.8 14.68 13.93L14.96 14.2L15.75 14.2L20.74 19.16ZM14.25 9.73C14.25 7.26 12.24 5.26 9.75 5.26C7.26 5.26 5.25 7.26 5.25 9.73C5.25 12.2 7.26 14.2 9.75 14.2C12.24 14.2 14.25 12.2 14.25 9.73Z" />
 		</clipPath>
 	</defs>
 	<style>
 		tspan { white-space:pre }
 		.shp0 { fill: #373b52 } 
 	</style>
-	<g id="main--screen-size" clip-path="url(#cp1)">
-		<g id="nav/side/right">
-			<g id="icon/action/search_24px">
-				<g id="Mask by icon/action/search_24px" clip-path="url(#cp2)">
-					<g id="↳ Color">
-						<path id="Rectangle" class="shp0" d="M0 0.33L24 0.33L24 16.33L0 16.33L0 0.33Z" />
+	<g id="Clip-Path: main" clip-path="url(#cp1)">
+		<g id="main">
+			<g id="nav/side/right">
+				<g id="icon/action/search_24px">
+					<g id="Clip-Path: Mask by icon/action/search_24px" clip-path="url(#cp2)">
+						<g id="Mask by icon/action/search_24px">
+							<g id="↳ Color">
+								<path id="Rectangle" class="shp0" d="M0 0.04L24 0.04L24 23.87L0 23.87L0 0.04Z" />
+							</g>
+						</g>
 					</g>
 				</g>
 			</g>

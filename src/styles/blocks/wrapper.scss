@@ -1,8 +1,10 @@
 .wrapper {
   position: relative;
   max-width: 1440px;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   overflow: hidden;
   margin: auto;
+  border-left: 1px solid $color-separator-line;
+  border-right: 1px solid $color-separator-line;
 }

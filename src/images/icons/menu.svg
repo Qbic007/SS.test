@@ -1,22 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 17" width="24" height="17">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
 	<defs>
 		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-			<path d="M-28 -21L1412 -21L1412 779L-28 779Z" />
+			<path d="M-25.92 -31.11L1356.48 -31.11L1356.48 1145.48L-25.92 1145.48L-25.92 -31.11Z" />
 		</clipPath>
 		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
-			<path d="M3 11L21 11L21 12.33L3 12.33L3 11ZM3 7.67L21 7.67L21 9L3 9L3 7.67ZM21 4.33L21 5.67L3 5.67L3 4.33L21 4.33Z" />
+			<path d="M3.84 15.95L21.12 15.95L21.12 17.91L3.84 17.91L3.84 15.95ZM3.84 11.05L21.12 11.05L21.12 13.01L3.84 13.01L3.84 11.05ZM21.12 6.15L21.12 8.11L3.84 8.11L3.84 6.15L21.12 6.15Z" />
 		</clipPath>
 	</defs>
 	<style>
 		tspan { white-space:pre }
 		.shp0 { fill: #373b52 } 
 	</style>
-	<g id="main--screen-size" clip-path="url(#cp1)">
-		<g id="nav/side/left">
-			<g id="icon/navigation/menu_24px">
-				<g id="Mask by icon/navigation/menu_24px" clip-path="url(#cp2)">
-					<g id="↳ Color">
-						<path id="Rectangle" class="shp0" d="M0 0.33L24 0.33L24 16.33L0 16.33L0 0.33Z" />
+	<g id="Clip-Path: main" clip-path="url(#cp1)">
+		<g id="main">
+			<g id="nav/side/left">
+				<g id="icon/navigation/menu_24px">
+					<g id="Clip-Path: Mask by icon/navigation/menu_24px" clip-path="url(#cp2)">
+						<g id="Mask by icon/navigation/menu_24px">
+							<g id="↳ Color">
+								<path id="Rectangle" class="shp0" d="M0.96 0.26L24 0.26L24 23.8L0.96 23.8L0.96 0.26Z" />
+							</g>
+						</g>
 					</g>
 				</g>
 			</g>
