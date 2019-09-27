@@ -2,20 +2,50 @@
   position: relative;
   border-top: 1px solid $color-separator-line;
   border-bottom: 1px solid $color-separator-line;
+  height: 512px;
 }
 
-.slider__button-left, .slider__button-right {
+.slider__buttons-container {
   position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 288px;
+  z-index: 100;
+}
+
+.slider__button {
+  width: $pt72;
+  height: $pt72;
+  background-color: white;
+  background-image: url(images/icons/arrow-left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 50%;
+  border: 1px solid $color-separator-line;
+  
+  &_right {
+    transform: rotate(180deg);
+  }
+}
+
+.slider__preview {
+  position: absolute;
+  width: 288px;
+  height: 152px;
+  bottom: 0;
+  right: 0;
+  background-color: white;
 }
 
 .slider__slide-container {
   position: relative;
+  height: 100%;
 }
 
 .slider__caption-container {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: $pt32;
+  left: $pt80;
 }
 
 .slider__title {
@@ -25,4 +55,5 @@
   color: $color-text-light;
   font-weight: 800;
   text-transform: capitalize;
+  width: 50%;
 }

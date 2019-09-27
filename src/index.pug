@@ -14,10 +14,11 @@ mixin article-preview(datetime, title, content)
         .article-preview__content= content
 
 mixin main-slide(datetime, title, src, previewSrc)
-    .slider__slide-container(style="background-image: url(" + src + ")")
+    .slider__slide-container
+        img.slider_img(src="images/slider.jpg")
         .slider__caption-container
-            .datetime.datetime_light datetime
-            h3.slider__title title
+            .datetime.datetime_light= datetime
+            h3.slider__title= title
         .slider__preview
             img.slider__preview-img(src= previewSrc)
 
@@ -153,19 +154,20 @@ html(lang="ru")
                                 +main-slide('27 Nov 2018',
                                 'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
                                 'images/slider.jpg',
-                                'images/slider.jpg')
+                                'images/preview.jpg')
                             .swiper-slide
                                 +main-slide('27 Nov 2018',
                                 'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
                                 'images/slider.jpg',
-                                'images/slider.jpg')
+                                'images/preview.jpg')
                             .swiper-slide
                                 +main-slide('27 Nov 2018',
                                 'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
                                 'images/slider.jpg',
-                                'images/slider.jpg')
-                        button.slider__button-left
-                        button.slider__button-right
+                                'images/preview.jpg')
+                        .slider__buttons-container
+                            button.slider__button.slider__button_left
+                            button.slider__button.slider__button_right
 
                     section.blog
                         .blog__main

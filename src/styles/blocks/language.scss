@@ -1,0 +1,16 @@
+.language__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none!important;
+  background: url(images/icons/arrow-select.svg) no-repeat 96% 50%;
+  width: 95px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  @include montserrat();
+  font-size: 12px;
+  line-height: 24px;
+  color: #373b52;
+  font-weight: 600;
+}
