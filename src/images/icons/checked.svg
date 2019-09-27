@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-547 -3389L893 -3389L893 582L-547 582L-547 -3389Z" />
+		</clipPath>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
+			<path d="M18 18L0 18L0 0L18 0L18 18ZM16 5L14.59 3.58L7 11.17L3.41 7.59L2 9L7 14L16 5Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #f51d57 } 
+	</style>
+	<g id="Clip-Path: main" clip-path="url(#cp1)">
+		<g id="main">
+			<g id="Group">
+				<g id="icon/toggle/check_box_outline_blank_24px">
+					<g id="Clip-Path: Mask by icon/toggle/check_box_24px" clip-path="url(#cp2)">
+						<g id="Mask by icon/toggle/check_box_24px">
+							<g id="↳ Color">
+								<path id="Rectangle" class="shp0" d="M-3 -3L21 -3L21 21L-3 21L-3 -3Z" />
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

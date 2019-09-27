@@ -10,6 +10,14 @@
   display: flex;
   justify-content: center;
   position: relative;
+  
+  &_new-section {
+    margin-top: $pt40;
+  }
+  
+  &_submit-sextion {
+    margin-top: $pt32;
+  }
 }
 
 .form__input-container {
@@ -25,10 +33,26 @@
   outline: none;
   border: 1px solid $color-separator-line;
   width: 100%;
+  caret-color: $color-magenta;
 
-  &:focus {
-    border: 1px solid $color-magenta;
+  &::-webkit-input-placeholder { /* Chrome */
+    color: $color-text-dark-opacity;
   }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $color-text-dark-opacity;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $color-text-dark-opacity;
+    opacity: 1;
+  }
+  &:-moz-placeholder { /* Firefox 4 - 18 */
+    color: $color-text-dark-opacity;
+    opacity: 1;
+  }
+}
+
+.form__error {
+  border: 1px solid $color-magenta;
 }
 
 .form__input-error-container {
@@ -97,5 +121,54 @@
   font-weight: 600;
   background-color: white;
   border-radius: 1px;
-  box-shadow: 0 8px 36px rgba(57,96,204,0.48);
+  box-shadow: 0 8px 36px rgba(57, 96, 204, 0.48);
+}
+
+.form__input_checkbox {
+  position: relative;
+  opacity: 0;
+  margin-right: $pt16;
+}
+
+.form__input-checkbox-label {
+  padding-left: $pt8;
+
+  &:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: $color-magenta;
+    background-image: url(images/icons/checked.svg);
+    margin-right: $pt8;
+    transform: translateY(-2px);
+    position: absolute;
+    top: 6px;
+    left: 2px;
+  }
+
+}
+
+.form__input_checkbox:checked ~ .form__input-checkbox-label {
+  &:before {
+    background-color: white;
+    transition: 0.2s;
+  }
+}
+
+.form__select {
+  padding: 12px $pt24 10px;
+  font-size: 12px;
+  font-weight: 600;
+  outline: none;
+  border: 1px solid $color-separator-line;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none!important;
+  background: url(images/icons/arrow-down.svg) no-repeat 96% 50%;
+  cursor: pointer;
+  @include montserrat();
+  line-height: 24px;
+  color: $color-text-dark-opacity;
 }

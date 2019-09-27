@@ -35,13 +35,13 @@ mixin input_text(label)
 
 mixin input_checkbox(label)
     .form__input-container
-        input.form__input_checkbox(type="checkbox")
-        label.form__input-checkbox-label= label
+        input.form__input_checkbox(type="checkbox" id="confirm")
+        label.form__input-checkbox-label(for="confirm")= label
         .form__input-error-container
             .form__input-error Some error
 
 mixin input_submit(label)
-    .form__input-container
+    .form__input-container.form__input-container_submit-sextion
         input.form__input_submit(type="submit" value= label)
 
 - var shortText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi consequuntur cumque deleniti distinctio eligendi esse illum natus necessitatibus vero. Excepturi facilis fugiat, laboriosam minima optio possimus temporibus? Ducimus, labore!';
@@ -233,13 +233,18 @@ html(lang="ru")
                             .feedback__form-container
                                 form.form
                                     .form__input-container
-                                        input.form__input_text(placeholder= "First name" type="text")
+                                        input.form__input_text.form__error(placeholder= "First name" type="text")
                                         .form__input-error-container.form__input-error-container_show
                                             .form__input-error Some error Some error
                                     +input_text('Last name')
                                     +input_text('Email')
                                     +input_text('Address')
                                     +input_checkbox('I confirm and agree to the processing of my data and information about myself')
+                                    .form__input-container.form__input-container_new-section
+                                        select.form__select
+                                            option.form__option(selected) Country
+                                            option.form__option Russia
+                                            option.form__option Unated States
                                     +input_submit('Send report')
                 footer.footer
                     .footer__left-column
