@@ -15,7 +15,7 @@ mixin article-preview(datetime, title, content)
 
 mixin main-slide(datetime, title, src, previewSrc)
     .slider__slide-container
-        img.slider_img(src="images/slider.jpg")
+        img.slider_img(src=src)
         .slider__caption-container
             .datetime.datetime_light= datetime
             h3.slider__title= title
@@ -158,7 +158,7 @@ html(lang="ru")
                             .swiper-slide
                                 +main-slide('27 Nov 2018',
                                 'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
-                                'images/slider.jpg',
+                                'images/slider_2.jpg',
                                 'images/preview.jpg')
                             .swiper-slide
                                 +main-slide('27 Nov 2018',

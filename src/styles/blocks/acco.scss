@@ -2,6 +2,10 @@
   margin-bottom: $pt32;
 }
 
+.acco__title-container {
+  cursor: pointer;
+}
+
 .acco__list {
   display: flex;
   flex-direction: column;
