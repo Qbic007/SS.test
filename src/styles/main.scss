@@ -7,27 +7,6 @@ $color-text-light: #f5f5fa;
 $color-magenta: #f51d57;
 
 //sizes
-$pt8: 8px;
-$pt16: 16px;
-$pt24: 24px;
-$pt32: 32px;
-$pt40: 40px;
-$pt48: 48px;
-$pt56: 56px;
-$pt64: 64px;
-$pt72: 72px;
-$pt80: 80px;
-$pt88: 88px;
-$pt96: 96px;
-$pt104: 104px;
-$pt112: 112px;
-$pt120: 120px;
-$pt128: 128px;
-$pt136: 136px;
-$pt144: 144px;
-$pt152: 152px;
-$pt160: 160px;
-$pt168: 168px;
 $column: 32%;
 $column2: 66%;
 
@@ -38,6 +17,7 @@ $column2: 66%;
 // blocks
 @import "blocks/aside";
 @import "blocks/container";
+@import "blocks/main-menu";
 @import "blocks/main-container";
 @import "blocks/icon";
 @import "blocks/logo";

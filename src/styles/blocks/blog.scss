@@ -1,10 +1,10 @@
 .blog {
   display: flex;
   justify-content: space-between;
-  padding-top: $pt72;
-  padding-bottom: $pt64;
-  padding-left: $pt80;
-  padding-right: $pt80;
+  padding-top: 72px;
+  padding-bottom: 64px;
+  padding-left: 80px;
+  padding-right: 80px;
   border-bottom: 1px solid $color-separator-line;
 }
 
@@ -17,11 +17,11 @@
 }
 
 .blog__title {
-  margin-bottom: $pt32;
+  margin-bottom: 32px;
 }
 
 .blog__author-container {
-  margin-bottom: $pt40;
+  margin-bottom: 40px;
 }
 
 .blog__content-container {
@@ -29,12 +29,12 @@
   font-weight: 400;
 
   & p {
-    margin-bottom: $pt32;
+    margin-bottom: 32px;
   }
 
   & li {
-    padding-left: $pt72;
-    margin-bottom: $pt32;
+    padding-left: 72px;
+    margin-bottom: 32px;
     position: relative;
   }
 
@@ -46,16 +46,16 @@
     border-radius: 50%;
     background-color: $color-magenta;
     top: 48%;
-    left: $pt32
+    left: 32px
   }
 
   & h2 {
-    margin-top: $pt40;
+    margin-top: 40px;
     letter-spacing: 0;
     line-height: 32px;
     @include montserrat();
     font-weight: 800;
-    margin-bottom: $pt32;
+    margin-bottom: 32px;
   }
 }
 
@@ -69,7 +69,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px $pt32;
+  padding: 12px 32px;
   border: 1px solid $color-separator-line;
   @include montserrat();
   font-weight: 600;
@@ -81,7 +81,7 @@
     height: 24px;
     width: 24px;
     background-image: url(images/icons/update.svg);
-    margin-right: $pt8;
+    margin-right: 8px;
   }
 }
 

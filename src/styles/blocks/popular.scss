@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: $pt32;
+  margin-bottom: 32px;
 }
 
 .popular__title-container {
   flex: 1;
   border-bottom: 1px $color-separator-line solid;
-  padding-bottom: $pt8;
+  padding-bottom: 8px;
 }
 
 .popular__title {
@@ -28,9 +28,9 @@
   font-size: 12px;
   font-weight: 600;
   border-bottom: 1px $color-separator-line solid;
-  padding-bottom: $pt16;
-  padding-left: $pt16;
-  padding-right: $pt16;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 
     &:last-child {
       padding-right: 0;

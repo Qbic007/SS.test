@@ -1,5 +1,5 @@
 .acco {
-  margin-bottom: $pt32;
+  margin-bottom: 32px;
 }
 
 .acco__title-container {
@@ -14,7 +14,7 @@
 }
 
 .acco__item {
-  padding: $pt24;
+  padding: 24px;
   border: 1px solid $color-separator-line;
   border-bottom: none;
   
@@ -27,7 +27,7 @@
   }
 
   &.active > .acco__title-container > .acco__title {
-    margin-bottom: $pt32;
+    margin-bottom: 32px;
   }
 
   &.active > .acco__title-container > .acco__title:after {

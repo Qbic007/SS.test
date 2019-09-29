@@ -12,20 +12,20 @@
   position: relative;
   
   &_new-section {
-    margin-top: $pt40;
+    margin-top: 40px;
   }
   
   &_submit-sextion {
-    margin-top: $pt32;
+    margin-top: 32px;
   }
 }
 
 .form__input-container {
-  margin-bottom: $pt24;
+  margin-bottom: 24px;
 }
 
 .form__input_text {
-  padding: 26px $pt24 20px;
+  padding: 26px 24px 20px;
   height: 24px;
   font-size: 12px;
   color: $color-text-dark;
@@ -64,12 +64,12 @@
   border-radius: 1px;
   box-shadow: 0 8px 24px rgba(57, 96, 204, 0.48);
   background-color: white;
-  padding: $pt8;
+  padding: 8px;
   font-size: 10px;
   line-height: 12px;
   color: $color-text-dark;
   font-weight: 600;
-  height: $pt40;
+  height: 40px;
   transform: translateY(-20px);
 
   &.form__input-error-container_show {
@@ -97,7 +97,7 @@
     height: 24px;
     width: 24px;
     background-image: url(images/icons/error.svg);
-    margin-right: $pt8;
+    margin-right: 8px;
     transform: translateY(-2px);
   }
 }
@@ -110,7 +110,7 @@
 
 .form__input_submit {
   vertical-align: center;
-  padding: 10px $pt24 12px $pt72;
+  padding: 10px 24px 12px 72px;
   outline: none;
   border: 1px solid $color-separator-line;
   text-align: left;
@@ -127,11 +127,11 @@
 .form__input_checkbox {
   position: relative;
   opacity: 0;
-  margin-right: $pt16;
+  margin-right: 16px;
 }
 
 .form__input-checkbox-label {
-  padding-left: $pt8;
+  padding-left: 8px;
 
   &:before {
     content: '';
@@ -139,7 +139,7 @@
     height: 18px;
     background-color: $color-magenta;
     background-image: url(images/icons/checked.svg);
-    margin-right: $pt8;
+    margin-right: 8px;
     transform: translateY(-2px);
     position: absolute;
     top: 6px;
@@ -156,7 +156,7 @@
 }
 
 .form__select {
-  padding: 12px $pt24 10px;
+  padding: 12px 24px 10px;
   font-size: 12px;
   font-weight: 600;
   outline: none;

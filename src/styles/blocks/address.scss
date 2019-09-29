@@ -1,10 +1,15 @@
 .address {
   display: flex;
   flex-direction: column;
+  @include montserrat();
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: $color-text-dark;
 }
 
 .address__location {
-  margin-bottom: $pt8;
+  margin-bottom: 8px;
 }
 
 .address__location-link {
@@ -21,7 +26,7 @@
 }
 
 .address__phone {
-  margin-bottom: $pt8;
+  margin-bottom: 8px;
 }
 
 .address__phone-link {
@@ -38,7 +43,7 @@
 }
 
 .address__email {
-  margin-bottom: $pt8;
+  margin-bottom: 8px;
 }
 
 .address__email-link {

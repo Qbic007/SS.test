@@ -14,8 +14,8 @@
 }
 
 .slider__button {
-  width: $pt72;
-  height: $pt72;
+  width: 72px;
+  height: 72px;
   background-color: white;
   background-image: url(images/icons/arrow-left.svg);
   background-position: center;
@@ -44,8 +44,8 @@
 
 .slider__caption-container {
   position: absolute;
-  bottom: $pt32;
-  left: $pt80;
+  bottom: 32px;
+  left: 80px;
 }
 
 .slider__title {

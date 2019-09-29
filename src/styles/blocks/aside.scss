@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  max-width: $pt80;
+  max-width: 80px;
   width: 5vw;
 
   &_right {
@@ -14,7 +14,7 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  max-width: $pt80;
+  max-width: 80px;
   width: 5vw;
   display: flex;
   flex-direction: column;
@@ -22,9 +22,9 @@
 }
 
 .aside__container {
-  max-width: $pt80;
+  max-width: 80px;
   width: 5vw;
-  height: $pt80;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,13 +38,18 @@
   position: relative;
   display: flex;
   content: '';
-  height: $pt24;
-  width: $pt24;
+  height: 24px;
+  width: 24px;
   background-repeat: no-repeat;
-  background-size: $pt24 $pt24;
+  background-size: 24px 24px;
 
   &_menu {
     background-image: url(images/icons/menu.svg);
+  }
+
+  &_cross {
+    background-image: url(images/icons/cross.svg);
+    display: none;
   }
 
   &_scrollup {
@@ -60,7 +65,7 @@
   }
 
   &_login {
-    width: $pt40;
+    width: 40px;
   }
 }
 
@@ -69,7 +74,7 @@
   display: flex;
   justify-content: center;
   writing-mode: tb-rl;
-  padding-right: $pt16;
+  padding-right: 16px;
   font-size: 10px;
   line-height: 20px;
   color: $color-text-dark;
@@ -77,12 +82,12 @@
 }
 
 .aside__socials-link {
-  margin-bottom: $pt16;
+  margin-bottom: 16px;
 }
 
 .aside__login-img-container {
-  width: $pt40;
-  height: $pt40;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   overflow: hidden;
 }

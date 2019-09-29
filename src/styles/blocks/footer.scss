@@ -1,8 +1,8 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-top: $pt64;
-  padding-bottom: $pt72;
+  padding-top: 64px;
+  padding-bottom: 72px;
   border-top: 1px solid $color-separator-line;
   font-size: 12px;
   line-height: 24px;
@@ -13,7 +13,7 @@
 .footer__left-column {
   display: flex;
   flex: 1;
-  padding-left: $pt80;
+  padding-left: 80px;
 }
 
 .footer__menu-list {
@@ -23,7 +23,7 @@
 
 .footer__menu-item {
   width: 50%;
-  margin-bottom: $pt8;
+  margin-bottom: 8px;
 }
 
 .footer__right-column {
@@ -33,5 +33,5 @@
 }
 
 .footer__logo-container {
-  margin-right: $pt80;
+  margin-right: 80px;
 }
