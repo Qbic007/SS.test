@@ -6,9 +6,22 @@ $(document).ready(function () {
         },
         effect: 'fade'
     });
-    
+
+    let tabs = new Swiper('.tabs', {
+        effect: 'fade'
+    });
+
+    let popularTab = $('.popular__tab');
+
+    popularTab.on('click', function () {
+        let self = $(this);
+        popularTab.removeClass('popular__tab_active');
+        self.addClass('popular__tab_active');
+        tabs.slideTo(self.data('page'));
+    });
+
     let accoTitleContainer = $('.acco__title-container');
-    
+
     accoTitleContainer.on('click', function () {
         let self = $(this);
         let accoItem = self.closest('.acco__item');

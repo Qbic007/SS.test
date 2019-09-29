@@ -132,22 +132,53 @@ html(lang="ru")
                                         h3.popular__title Popular
                                     .popular__tabs-container
                                         ul.popular__tabs
-                                            li.popular__tab.popular__tab_active Today
-                                            li.popular__tab This week
-                                            li.popular__tab Month
-                                ul.posts__list
-                                    li.posts__item
-                                        +article-preview('29 Jun 2018',
-                                        'It S Classified How To Utilize Free Classified Ad Sites To Boost Business',
-                                        shortText)
-                                    li.posts__item
-                                        +article-preview('29 Jun 2018',
-                                        '12 Handy Tips For Generating Leads Through Cold Calling',
-                                        shortText)
-                                    li.posts__item
-                                        +article-preview('29 Jun 2018',
-                                        'Make Money Online Through Advertising',
-                                        shortText)
+                                            li.popular__tab.popular__tab_active(data-page='0') Today
+                                            li.popular__tab(data-page='1') This week
+                                            li.popular__tab(data-page='2') Month
+                                .tabs
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            ul.posts__list
+                                                li.posts__item
+                                                    +article-preview('29 Jun 2018',
+                                                    'It S Classified How To Utilize Free Classified Ad Sites To Boost Business',
+                                                    shortText)
+                                                li.posts__item
+                                                    +article-preview('29 Jun 2018',
+                                                    '12 Handy Tips For Generating Leads Through Cold Calling',
+                                                    shortText)
+                                                li.posts__item
+                                                    +article-preview('29 Jun 2018',
+                                                    'Make Money Online Through Advertising',
+                                                    shortText)
+                                        .swiper-slide
+                                            ul.posts__list
+                                                li.posts__item
+                                                    +article-preview('11 Jun 2018',
+                                                    'It S Classified How To Utilize Free Classified Ad Sites To Boost Business',
+                                                    shortText)
+                                                li.posts__item
+                                                    +article-preview('11 Jun 2018',
+                                                    '12 Handy Tips For Generating Leads Through Cold Calling',
+                                                    shortText)
+                                                li.posts__item
+                                                    +article-preview('11 Jun 2018',
+                                                    'Make Money Online Through Advertising',
+                                                    shortText)
+                                        .swiper-slide
+                                            ul.posts__list
+                                                li.posts__item
+                                                    +article-preview('22 Jun 2018',
+                                                    'It S Classified How To Utilize Free Classified Ad Sites To Boost Business',
+                                                    shortText)
+                                                li.posts__item
+                                                    +article-preview('22 Jun 2018',
+                                                    '12 Handy Tips For Generating Leads Through Cold Calling',
+                                                    shortText)
+                                                li.posts__item
+                                                    +article-preview('22 Jun 2018',
+                                                    'Make Money Online Through Advertising',
+                                                    shortText)
                     section.slider
                         .swiper-wrapper
                             .swiper-slide
