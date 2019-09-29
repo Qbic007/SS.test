@@ -6,6 +6,9 @@ $(document).ready(function () {
         },
         effect: 'fade'
     });
+    swiper.on('slideChangeTransitionEnd', function () {
+        sliderPreviewGetImage();
+    });
 
     let tabs = new Swiper('.tabs', {
         effect: 'fade'
@@ -25,7 +28,7 @@ $(document).ready(function () {
         let accoItem = self.closest('.acco__item');
 
         accoItem.toggleClass('active');
-    })
+    });
 
     let asideLinkMenu = $('.aside__link_menu');
     let asideLinkCross = $('.aside__link_cross');
@@ -47,18 +50,20 @@ $(document).ready(function () {
     });
 
     let sliderPreview = $('.slider__preview');
-    let firstSlide;
-    sliderPreview.each(function (index, elem) {
-        let self = $(elem);
-        let slide = self.closest('.swiper-slide');
-        if (index === 0) {
-            firstSlide = slide;
-        }
-        let nextSlide = slide.next('.swiper-slide');
-        if (nextSlide.length === 0) {
-            nextSlide = firstSlide;
-        }
-        let nextImg = nextSlide.find('.slider_img');
-        self.css('backgroundImage', 'url(' + nextImg.attr('src') + ')');
-    })
+
+    function sliderPreviewGetImage() {
+        let swiperSlideNext = $('.swiper-slide-next');
+        let nextImg = swiperSlideNext.find('.slider_img');
+        sliderPreview.css('backgroundImage', 'url(' + nextImg.attr('src') + ')');
+    }
+
+    sliderPreviewGetImage();
+
+    let asideLinkScrollup = $('.aside__link_scrollup');
+    asideLinkScrollup.click(function () {
+        $("html").animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
 });

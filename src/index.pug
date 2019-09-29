@@ -19,7 +19,6 @@ mixin main-slide(datetime, title, src)
         .slider__caption-container
             .datetime.datetime_light= datetime
             h3.slider__title= title
-        .slider__preview
 
 mixin acco(title, content)
     .acco__title-container
@@ -71,9 +70,9 @@ html(lang="ru")
                     .aside__container.aside__container_search
                         a.aside__link.aside__link_search(href="#")
                     .aside__socials
-                        a.aside__socials-link(href="#") Instagram
-                        a.aside__socials-link(href="#") Twitter
-                        a.aside__socials-link(href="#") Facebook
+                        a.aside__socials-link(href="https://instagram.com" target="blank") Instagram
+                        a.aside__socials-link(href="https://twitter.com" target="blank") Twitter
+                        a.aside__socials-link(href="https://facebook.com" target="blank") Facebook
                     .aside__container.aside__container_copyright
                         a.aside__link.aside__link_copyright(href="#")
             .container
@@ -147,25 +146,28 @@ html(lang="ru")
                                 ul.posts__list
                                     li.posts__item
                                         .posts__item-container
-                                            .posts__img-container
-                                                img.posts__img(src='images/content.jpg')
-                                            +article-preview('04 Jul 2018',
-                                            'Research In Advertising',
-                                            shortText)
+                                            a(href="")
+                                                .posts__img-container
+                                                    img.posts__img(src='images/content.jpg')
+                                                +article-preview('04 Jul 2018',
+                                                'Research In Advertising',
+                                                shortText)
                                     li.posts__item
                                         .posts__item-container
-                                            .posts__img-container
-                                                img.posts__img(src='images/content.jpg')
-                                            +article-preview('04 Jul 2018',
-                                            'Research In Advertising',
-                                            shortText)
+                                            a(href="")
+                                                .posts__img-container
+                                                    img.posts__img(src='images/content.jpg')
+                                                +article-preview('04 Jul 2018',
+                                                'Research In Advertising',
+                                                shortText)
                                     li.posts__item
                                         .posts__item-container
-                                            .posts__img-container
-                                                img.posts__img(src='images/content.jpg')
-                                            +article-preview('29 Jun 2018',
-                                            'Free Classifieds Using Them To Promote Your Stuff Online',
-                                            shortText)
+                                            a(href="")
+                                                .posts__img-container
+                                                    img.posts__img(src='images/content.jpg')
+                                                +article-preview('29 Jun 2018',
+                                                'Free Classifieds Using Them To Promote Your Stuff Online',
+                                                shortText)
                             .popular__container
                                 .popular__caption-line
                                     .popular__title-container
@@ -180,17 +182,20 @@ html(lang="ru")
                                         .swiper-slide
                                             ul.posts__list
                                                 li.posts__item
-                                                    +article-preview('29 Jun 2018',
-                                                    'It S Classified How To Utilize Free Classified Ad Sites To Boost Business',
-                                                    shortText)
+                                                    a(href="")
+                                                        +article-preview('29 Jun 2018',
+                                                        'It S Classified How To Utilize Free Classified Ad Sites To Boost Business',
+                                                        shortText)
                                                 li.posts__item
-                                                    +article-preview('29 Jun 2018',
-                                                    '12 Handy Tips For Generating Leads Through Cold Calling',
-                                                    shortText)
+                                                    a(href="")
+                                                        +article-preview('29 Jun 2018',
+                                                        '12 Handy Tips For Generating Leads Through Cold Calling',
+                                                        shortText)
                                                 li.posts__item
-                                                    +article-preview('29 Jun 2018',
-                                                    'Make Money Online Through Advertising',
-                                                    shortText)
+                                                    a(href="")
+                                                        +article-preview('29 Jun 2018',
+                                                        'Make Money Online Through Advertising',
+                                                        shortText)
                                         .swiper-slide
                                             ul.posts__list
                                                 li.posts__item
@@ -233,6 +238,7 @@ html(lang="ru")
                                 +main-slide('27 Nov 2018',
                                 'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
                                 'images/slider_3.jpg')
+                        .slider__preview
                         .slider__buttons-container
                             button.slider__button.slider__button_left
                             button.slider__button.slider__button_right

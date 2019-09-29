@@ -37,6 +37,7 @@
   background-color: white;
   background-size: cover;
   cursor: pointer;
+  z-index: 10;
 }
 
 .slider__slide-container {
@@ -58,4 +59,9 @@
   font-weight: 800;
   text-transform: capitalize;
   width: 50%;
+}
+
+.swiper-button-disabled {
+  opacity: 0;
+  transition: .3s;
 }
