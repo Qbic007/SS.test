@@ -13,14 +13,13 @@ mixin article-preview(datetime, title, content)
             h3.article-title= title
         .article-preview__content= content
 
-mixin main-slide(datetime, title, src, previewSrc)
+mixin main-slide(datetime, title, src)
     .slider__slide-container
-        img.slider_img(src=src)
+        img.slider_img(src= src)
         .slider__caption-container
             .datetime.datetime_light= datetime
             h3.slider__title= title
         .slider__preview
-            img.slider__preview-img(src= previewSrc)
 
 mixin acco(title, content)
     .acco__title-container
@@ -225,18 +224,15 @@ html(lang="ru")
                             .swiper-slide
                                 +main-slide('27 Nov 2018',
                                 'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
-                                'images/slider.jpg',
-                                'images/preview.jpg')
+                                'images/slider.jpg')
                             .swiper-slide
                                 +main-slide('27 Nov 2018',
                                 'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
-                                'images/slider_2.jpg',
-                                'images/preview.jpg')
+                                'images/slider_2.jpg')
                             .swiper-slide
                                 +main-slide('27 Nov 2018',
                                 'Consumer Psychology In The Industrial And Manufacturing Equipment Marketplace',
-                                'images/slider.jpg',
-                                'images/preview.jpg')
+                                'images/slider_3.jpg')
                         .slider__buttons-container
                             button.slider__button.slider__button_left
                             button.slider__button.slider__button_right

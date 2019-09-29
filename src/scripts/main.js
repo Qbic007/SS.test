@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let swiper = new Swiper('.slider', {
         navigation: {
-            nextEl: '.slider__button_right',
+            nextEl: '.slider__button_right, .slider__preview',
             prevEl: '.slider__button_left',
         },
         effect: 'fade'
@@ -46,4 +46,19 @@ $(document).ready(function () {
         });
     });
 
+    let sliderPreview = $('.slider__preview');
+    let firstSlide;
+    sliderPreview.each(function (index, elem) {
+        let self = $(elem);
+        let slide = self.closest('.swiper-slide');
+        if (index === 0) {
+            firstSlide = slide;
+        }
+        let nextSlide = slide.next('.swiper-slide');
+        if (nextSlide.length === 0) {
+            nextSlide = firstSlide;
+        }
+        let nextImg = nextSlide.find('.slider_img');
+        self.css('backgroundImage', 'url(' + nextImg.attr('src') + ')');
+    })
 });
