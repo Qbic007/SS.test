@@ -45,23 +45,28 @@
 
   &_menu {
     background-image: url(images/icons/menu.svg);
+    background-size: cover;
   }
 
   &_cross {
     background-image: url(images/icons/cross.svg);
+    background-size: cover;
     display: none;
   }
 
   &_scrollup {
     background-image: url(images/icons/arrow.svg);
+    background-size: cover;
   }
 
   &_search {
     background-image: url(images/icons/search.svg);
+    background-size: cover;
   }
 
   &_copyright {
     background-image: url(images/icons/copyright.svg);
+    background-size: cover;
   }
 
   &_login {

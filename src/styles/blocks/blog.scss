@@ -6,6 +6,10 @@
   padding-left: 80px;
   padding-right: 80px;
   border-bottom: 1px solid $color-separator-line;
+  
+  @include tablets() {
+    flex-direction: column;
+  }
 }
 
 .blog__main{
@@ -14,6 +18,11 @@
   align-items: stretch;
   justify-content: flex-start;
   width: $column2;
+
+  @include tablets() {
+    width: $phonesColumn;
+    margin-bottom: 32px;
+  }
 }
 
 .blog__title {
@@ -81,10 +90,15 @@
     height: 24px;
     width: 24px;
     background-image: url(images/icons/update.svg);
+    background-size: cover;
     margin-right: 8px;
   }
 }
 
 .blog_aside {
   width: $column;
+
+  @include tablets() {
+    width: $phonesColumn;
+  }
 }

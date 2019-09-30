@@ -9,10 +9,21 @@
 .posts__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .posts__item {
   width: $column;
+  
+  @include tablets() {
+    width: $tabletsColumn;
+    margin-bottom: 24px;
+  }
+  
+  @include phones() {
+    width: $phonesColumn;
+    margin-bottom: 24px;
+  }
 }
 
 .posts__img-container {

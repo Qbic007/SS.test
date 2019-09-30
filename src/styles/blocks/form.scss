@@ -60,7 +60,7 @@
   position: absolute;
   top: 50%;
   right: -216px;
-  width: 200px;
+  max-width: 184px;
   border-radius: 1px;
   box-shadow: 0 8px 24px rgba(57, 96, 204, 0.48);
   background-color: white;
@@ -71,6 +71,16 @@
   font-weight: 600;
   height: 40px;
   transform: translateY(-20px);
+  
+  @include tablets() {
+    transform: translateY(-18px);    
+  }
+  
+  @include phones() {
+    transform: translateY(-16px);
+    right: -172px;
+    max-width: 160px;
+  }
 
   &.form__input-error-container_show {
     display: block;
@@ -91,12 +101,14 @@
 .form__input-error {
   display: flex;
   align-items: center;
+  padding: 0 8px;
 
   &:before {
     content: '';
     height: 24px;
     width: 24px;
     background-image: url(images/icons/error.svg);
+    background-size: cover;
     margin-right: 8px;
     transform: translateY(-2px);
   }
@@ -109,19 +121,7 @@
 }
 
 .form__input_submit {
-  vertical-align: center;
-  padding: 10px 24px 12px 72px;
-  outline: none;
-  border: 1px solid $color-separator-line;
-  text-align: left;
   width: 100%;
-  font-size: 16px;
-  line-height: 24px;
-  color: $color-magenta;
-  font-weight: 600;
-  background-color: white;
-  border-radius: 1px;
-  box-shadow: 0 8px 36px rgba(57, 96, 204, 0.48);
 }
 
 .form__input_checkbox {
@@ -139,6 +139,7 @@
     height: 18px;
     background-color: $color-magenta;
     background-image: url(images/icons/checked.svg);
+    background-size: cover;
     margin-right: 8px;
     transform: translateY(-2px);
     position: absolute;

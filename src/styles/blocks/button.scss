@@ -1,0 +1,14 @@
+.button {
+  padding: 16px 32px;
+  border-radius: 1px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(57,96,204,0.48);
+  background-color: white;
+  color: $color-magenta;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  @include montserrat();
+}

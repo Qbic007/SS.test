@@ -9,8 +9,17 @@ $color-magenta: #f51d57;
 //sizes
 $column: 32%;
 $column2: 66%;
+$tabletsColumn: 49%;
+$phonesColumn: 100%;
+
+// resolutions
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
 
 // setups
+@import "misc/media";
 @import "misc/fonts";
 @import "misc/layout";
 
@@ -30,6 +39,7 @@ $column2: 66%;
 @import "blocks/menu";
 @import "blocks/title";
 @import "blocks/caption";
+@import "blocks/button";
 @import "blocks/posts";
 @import "blocks/popular";
 @import "blocks/tabs";
@@ -42,6 +52,3 @@ $column2: 66%;
 @import "blocks/form";
 @import "blocks/footer";
 @import "blocks/address";
-
-//libs
-//@import "libs/swiper";

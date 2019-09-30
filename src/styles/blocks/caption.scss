@@ -9,6 +9,10 @@
 .caption__title-container {
   width: 50%;
   margin-bottom: 40px;
+  
+  @include phones() {
+    width: $phonesColumn;
+  }
 }
 
 .caption__button {

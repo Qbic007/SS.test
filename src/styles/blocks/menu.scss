@@ -3,6 +3,10 @@
   line-height: 24px;
   font-weight: 600;
   flex-wrap: wrap;
+  
+  @include tablets() {
+    display: none;
+  }
 }
 
 .menu__item {
