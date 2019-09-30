@@ -1,10 +1,13 @@
 .wrapper {
   position: relative;
-  //max-width: 1440px;
-  //width: 100vw;
+  max-width: 1440px;
+  width: 100%;
   min-height: 100vh;
   overflow: hidden;
   margin: auto;
-  //border-left: 1px solid $color-separator-line;
-  //border-right: 1px solid $color-separator-line;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-position: top;
+  background-repeat: no-repeat;
 }

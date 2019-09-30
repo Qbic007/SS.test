@@ -33,10 +33,12 @@ $(document).ready(function () {
     let asideLinkMenu = $('.aside__link_menu');
     let asideLinkCross = $('.aside__link_cross');
     let mainMenu = $('.main-menu');
+    let overlay = $('.overlay');
     asideLinkMenu.on('click', function () {
         let self = $(this);
         self.hide();
         asideLinkCross.show();
+        overlay.css('z-index', 2000);
         mainMenu.show();
         mainMenu.animate({opacity: 1}, 300);
     });
@@ -46,6 +48,7 @@ $(document).ready(function () {
         asideLinkMenu.show();
         mainMenu.animate({opacity: 0}, 300, function () {
             mainMenu.hide();
+            overlay.css('z-index', 0);
         });
     });
 
