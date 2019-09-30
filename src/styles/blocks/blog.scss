@@ -7,8 +7,9 @@
   padding-right: 80px;
   border-bottom: 1px solid $color-separator-line;
   
-  @include tablets() {
+  @include laptop() {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -19,7 +20,7 @@
   justify-content: flex-start;
   width: $column2;
 
-  @include tablets() {
+  @include laptop() {
     width: $phonesColumn;
     margin-bottom: 32px;
   }
@@ -97,6 +98,10 @@
 
 .blog_aside {
   width: $column;
+
+  @include laptop() {
+    width: $tabletsColumn;
+  }
 
   @include tablets() {
     width: $phonesColumn;
