@@ -15,7 +15,7 @@ mixin article-preview(datetime, title, content)
 
 mixin main-slide(datetime, title, src)
     .slider__slide-container
-        img.slider_img(src= src)
+        .slider_img(style="background-image: url("+src+")")
         .slider__caption-container
             .datetime.datetime_light= datetime
             h3.slider__title= title

@@ -54,7 +54,7 @@ $(document).ready(function () {
     function sliderPreviewGetImage() {
         let swiperSlideNext = $('.swiper-slide-next');
         let nextImg = swiperSlideNext.find('.slider_img');
-        sliderPreview.css('backgroundImage', 'url(' + nextImg.attr('src') + ')');
+        sliderPreview.css('backgroundImage', nextImg.css("background-image"));
     }
 
     sliderPreviewGetImage();

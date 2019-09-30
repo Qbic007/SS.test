@@ -21,14 +21,14 @@
   flex: 1;
   padding-left: 80px;
 
-  @include phones() {
+  @include tablets() {
     padding-left: 0;
     margin-bottom: 24px;
   }
 }
 
 .footer__logo-container {
-  @include phones() {
+  @include tablets() {
     display: none;
   }
 }
