@@ -1,6 +1,13 @@
 .aside__box {
   max-width: 80px;
   width: 5vw;
+  
+  @include laptop() {
+    width: 100%;
+    max-width: unset;
+    background-color: white;
+    z-index: 2500;
+  }
 }
 
 .aside {
@@ -12,10 +19,23 @@
   
   &_left {
     border-left: 1px solid $color-separator-line;
+    
+    @include laptop() {
+      border-top: 1px solid $color-separator-line;
+    }
   }
   
   &_right {
     border-right: 1px solid $color-separator-line;
+
+    @include laptop() {
+      border-bottom: 1px solid $color-separator-line;
+    }
+  }
+  
+  @include laptop() {
+    height: auto;
+    flex-direction: row;
   }
 }
 
@@ -28,6 +48,15 @@
 
   &_scrollup, &_copyright {
     border-top: 1px solid $color-separator-line;
+
+    @include laptop() {
+      border-top: unset;
+      border-left: 1px solid $color-separator-line;
+    }
+  }
+  
+  @include laptop() {
+    width: 80px;
   }
 }
 
@@ -68,6 +97,9 @@
 
   &_login {
     width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -81,10 +113,21 @@
   line-height: 20px;
   color: $color-text-dark;
   font-weight: 600;
+  
+  @include laptop() {
+    writing-mode: unset;
+    padding-right: 0;
+    padding-top: 16px;
+  }
 }
 
 .aside__socials-link {
   margin-bottom: 16px;
+  
+  @include laptop() {
+    margin-bottom: unset;
+    margin-right: 16px;
+  }
 }
 
 .aside__login-img-container {

@@ -34,11 +34,13 @@ $(document).ready(function () {
     let asideLinkCross = $('.aside__link_cross');
     let mainMenu = $('.main-menu');
     let overlay = $('.overlay');
+    let overlayContainer = $('.overlay__container');
     asideLinkMenu.on('click', function () {
         let self = $(this);
         self.hide();
         asideLinkCross.show();
         overlay.css('z-index', 2000);
+        overlayContainer.show();
         mainMenu.show();
         mainMenu.animate({opacity: 1}, 300);
     });
@@ -48,7 +50,10 @@ $(document).ready(function () {
         asideLinkMenu.show();
         mainMenu.animate({opacity: 0}, 300, function () {
             mainMenu.hide();
-            overlay.css('z-index', 0);
+            overlayContainer.hide();
+            let width = document.body.clientWidth;
+            zIndex = width <= 992 ? 10 : 0;
+            overlay.css('z-index', zIndex);
         });
     });
 

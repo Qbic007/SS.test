@@ -4,6 +4,29 @@
   width: 100%;
   margin: auto;
   z-index: 0;
+  top: 0;
+  
+  @include laptop() {
+    z-index: 10;
+  }
+}
+
+.overlay__wrapper {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-position: top;
+  background-repeat: no-repeat;
+  
+  @include laptop() {
+    flex-direction: column-reverse;
+  }
 }
 
 .overlay__container {
@@ -11,4 +34,11 @@
   max-width: 1280px;
   width: 90%;
   height: 100vh;
+  
+  @include laptop() {
+    flex: 1;
+    display: none;
+    height: 100%;
+    background-color: white;
+  }
 }

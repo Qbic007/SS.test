@@ -11,4 +11,10 @@
   overflow: hidden;
   border-left: 1px solid $color-separator-line;
   border-right: 1px solid $color-separator-line;
+  
+  @include laptop() {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+  }
 }
