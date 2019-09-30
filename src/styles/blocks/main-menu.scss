@@ -5,6 +5,8 @@
   display: none;
   opacity: 0;
   z-index: 1000;
+  border-right: 1px solid $color-separator-line;
+  border-left: 1px solid $color-separator-line;
 }
 
 .main-menu__container {
