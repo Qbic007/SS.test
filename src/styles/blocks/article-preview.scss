@@ -1,8 +1,10 @@
-.article-preview__content {
-  @include lora();
-  font-weight: 400;
-}
+.article-preview {
+  &__content {
+    @include lora();
+    font-weight: 400;
+  }
 
-.article-preview__article-title-container {
-  margin-bottom: 8px;
+  &__article-title-container {
+    margin-bottom: 8px;
+  }  
 }

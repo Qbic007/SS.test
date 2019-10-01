@@ -4,32 +4,32 @@
   flex-direction: column;
   padding-top: 136px;
   padding-bottom: 136px;
-}
 
-.caption__title-container {
-  width: 50%;
-  margin-bottom: 40px;
-  
-  @include phones() {
-    width: $phonesColumn;
+  &__title-container {
+    width: 50%;
+    margin-bottom: 40px;
+
+    @include phones() {
+      width: $phonesColumn;
+    }
   }
-}
 
-.caption__button {
-  padding: 16px 32px;
-  border-radius: 1px;
-  box-shadow: 0 8px 24px rgba(57,96,204,0.48);
-  background-color: white;
-  color: $color-magenta;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 16px;
-}
+  &__button {
+    padding: 16px 32px;
+    border-radius: 1px;
+    box-shadow: 0 8px 24px rgba(57,96,204,0.48);
+    background-color: white;
+    color: $color-magenta;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
 
-.caption__tip {
-  font-size: 12px;
-  color: $color-text-dark-opacity;
-  font-weight: 400;
+  &__tip {
+    font-size: 12px;
+    color: $color-text-dark-opacity;
+    font-weight: 400;
+  }
 }

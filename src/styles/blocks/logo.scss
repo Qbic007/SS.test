@@ -5,22 +5,18 @@
   color: $color-text-dark;
   @include montserrat();
   font-weight: 600;
-}
 
-.header__logo-container {
-  padding-right: 64px;
-}
+  &__img-container {
+    width: 24px;
+    height: 24px;
+  }
 
-.logo__img-container {
-  width: 24px;
-  height: 24px;
-}
+  &__img-container {
+    margin-right: 8px;
+  }
 
-.logo__img-container {
-  margin-right: 8px;
-}
-
-.logo__text-container {
-  font-weight: 600;
-  flex: 1;
+  &__text-container {
+    font-weight: 600;
+    flex: 1;
+  }
 }

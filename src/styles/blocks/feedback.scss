@@ -5,25 +5,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.feedback-container {
-  width: $column2;
-}
+  &__container {
+    width: $column2;
+  }
 
-.feedback__caption-container {
-  text-align: center;
-  margin-bottom: 32px;
-}
+  &__caption-container {
+    text-align: center;
+    margin-bottom: 32px;
+  }
 
-.feedback__title-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 32px;
-}
+  &__title-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 32px;
+  }
 
-.feedback__form-container {
-  display: flex;
-  justify-content: center;
+  &__form-container {
+    display: flex;
+    justify-content: center;
+  }
 }

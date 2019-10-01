@@ -1,36 +1,37 @@
-.popular__caption-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 32px;
-}
+.popular {
+  &__caption-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+  }
 
-.popular__title-container {
-  flex: 1;
-  border-bottom: 1px $color-separator-line solid;
-  padding-bottom: 8px;
-}
+  &__title-container {
+    flex: 1;
+    border-bottom: 1px $color-separator-line solid;
+    padding-bottom: 8px;
+  }
 
-.popular__title {
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: 32px;
-  color: $color-text-dark;
-  font-weight: 800;
-}
+  &__title {
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 32px;
+    color: $color-text-dark;
+    font-weight: 800;
+  }
 
-.popular__tabs {
-  display: flex;
-}
+  &__tabs {
+    display: flex;
+  }
 
-.popular__tab {
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 600;
-  border-bottom: 1px $color-separator-line solid;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  &__tab {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px $color-separator-line solid;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 
     &:last-child {
       padding-right: 0;
@@ -39,4 +40,6 @@
     &_active {
       border-bottom: 1px $color-magenta solid;
     }
+  }
+  
 }

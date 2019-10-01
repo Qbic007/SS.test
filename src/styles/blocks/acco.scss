@@ -1,67 +1,67 @@
 .acco {
   margin-bottom: 32px;
-}
 
-.acco__title-container {
-  cursor: pointer;
-}
-
-.acco__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.acco__item {
-  padding: 24px;
-  border: 1px solid $color-separator-line;
-  border-bottom: none;
-
-  &:last-child {
-    border-bottom: 1px solid $color-separator-line;
+  &__title-container {
+    cursor: pointer;
   }
 
-  &.active > .acco__content {
-    height: auto;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
-  &.active > .acco__title-container > .acco__title {
-    margin-bottom: 32px;
+  &__item {
+    padding: 24px;
+    border: 1px solid $color-separator-line;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid $color-separator-line;
+    }
+
+    &.active > .acco__content {
+      height: auto;
+    }
+
+    &.active > .acco__title-container > .acco__title {
+      margin-bottom: 32px;
+    }
+
+    &.active > .acco__title-container > .acco__title:after {
+      transform: unset;
+    }
   }
 
-  &.active > .acco__title-container > .acco__title:after {
-    transform: unset;
-  }
-}
-
-.acco__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  position: relative;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 0;
-
-  &:after {
-    content: '';
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     position: relative;
-    height: 24px;
-    width: 24px;
-    background-image: url(images/icons/arrow.svg);
-    background-size: cover;
-    transform: rotate(180deg);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0;
+
+    &:after {
+      content: '';
+      position: relative;
+      height: 24px;
+      width: 24px;
+      background-image: url(images/icons/arrow.svg);
+      background-size: cover;
+      transform: rotate(180deg);
+    }
   }
-}
 
-.acco__title-text {
-  flex: 1;
-}
+  &__title-text {
+    flex: 1;
+  }
 
-.acco__content {
-  height: 0;
-  overflow: hidden;
-  @include lora();
-  font-weight: 400;
+  &__content {
+    height: 0;
+    overflow: hidden;
+    @include lora();
+    font-weight: 400;
+  }
 }

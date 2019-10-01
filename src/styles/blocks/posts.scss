@@ -1,40 +1,40 @@
 .posts {
   padding-bottom: 64px;
-}
 
-.posts__container {
-  margin-bottom: 40px;
-}
-
-.posts__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.posts__item {
-  width: $column;
-  
-  @include tablets() {
-    width: $tabletsColumn;
-    margin-bottom: 24px;
+  &__container {
+    margin-bottom: 40px;
   }
-  
-  @include phones() {
-    width: $phonesColumn;
-    margin-bottom: 24px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-}
 
-.posts__img-container {
-  border-radius: 2px;
-  box-shadow: 0 8px 24px rgba(57,96,204,0.48);
-  height: auto;
-  margin-bottom: 8px;
-}
+  &__item {
+    width: $column;
 
-.posts__img {
+    @include tablets() {
+      width: $tabletsColumn;
+      margin-bottom: 24px;
+    }
+
+    @include phones() {
+      width: $phonesColumn;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__img-container {
+    border-radius: 2px;
+    box-shadow: 0 8px 24px rgba(57,96,204,0.48);
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  &__img {
     display: block;
     margin: 0;
     width: 100%;
+  }
 }

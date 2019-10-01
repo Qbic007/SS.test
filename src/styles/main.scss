@@ -23,6 +23,7 @@ $laptop: 992px;
 @import "misc/layout";
 
 // blocks
+@import "blocks/swiper";
 @import "blocks/overlay";
 @import "blocks/aside";
 @import "blocks/container";
@@ -44,6 +45,7 @@ $laptop: 992px;
 @import "blocks/tabs";
 @import "blocks/slider";
 @import "blocks/blog";
+@import "blocks/load-more";
 @import "blocks/author";
 @import "blocks/acco";
 @import "blocks/pic-preview";

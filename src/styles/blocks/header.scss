@@ -3,16 +3,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 32px 64px;
-}
 
-.header__left-column {
-  display: flex;
-  flex-wrap: wrap;
-}
+  &__left-column {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.header__right-column {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  &__right-column {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &__logo-container {
+    padding-right: 64px;
+  }  
 }
 
