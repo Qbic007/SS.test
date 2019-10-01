@@ -1,9 +1,11 @@
 .aside__box {
   max-width: 80px;
   width: 5vw;
+  height: 100vh;
   
   @include laptop() {
     width: 100vw;
+    height: unset;
     max-width: unset;
     background-color: white;
     z-index: 2500;
