@@ -33,13 +33,11 @@ $(document).ready(function () {
     let asideLinkMenu = $('.aside__link_menu');
     let asideLinkCross = $('.aside__link_cross');
     let mainMenu = $('.main-menu');
-    let overlay = $('.overlay');
     let overlayContainer = $('.overlay__container');
     asideLinkMenu.on('click', function () {
         let self = $(this);
         self.hide();
         asideLinkCross.show();
-        overlay.css('z-index', 2000);
         overlayContainer.show();
         mainMenu.show();
         mainMenu.animate({opacity: 1}, 300);
@@ -51,9 +49,6 @@ $(document).ready(function () {
         mainMenu.animate({opacity: 0}, 300, function () {
             mainMenu.hide();
             overlayContainer.hide();
-            let width = document.body.clientWidth;
-            // zIndex = width <= 992 ? 10 : 0;
-            // overlay.css('z-index', zIndex);
         });
     });
 
