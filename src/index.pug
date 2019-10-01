@@ -22,21 +22,24 @@ mixin main-slide(datetime, title, src)
 
 mixin acco(title, content)
     .acco__title-container
-        h3.acco__title= title
+        h3.acco__title
+            span.acco__title-text= title
     .acco__content= content
 
 mixin input_text(label)
     .form__input-container
         input.form__input_text(placeholder= label type="text")
         .form__input-error-container
-            .form__input-error Some error
+            .form__input-error 
+                span.form__input-error-text Some error
 
 mixin input_checkbox(label)
     .form__input-container
         input.form__input_checkbox(type="checkbox" id="confirm")
         label.form__input-checkbox-label(for="confirm")= label
         .form__input-error-container
-            .form__input-error Some error
+            .form__input-error 
+                span.form__input-error-text Some error
 
 mixin input_submit(label)
     .form__input-container.form__input-container_submit-sextion
@@ -311,7 +314,8 @@ html(lang="ru")
                                 .form__input-container
                                     input.form__input_text.form__error(placeholder= "First name" type="text")
                                     .form__input-error-container.form__input-error-container_show
-                                        .form__input-error Some error Some error
+                                        .form__input-error 
+                                            span.form__input-error-text Some error Some error Some error Some error Some error Some error
                                 +input_text('Last name')
                                 +input_text('Email')
                                 +input_text('Address')
@@ -347,9 +351,12 @@ html(lang="ru")
                 .footer__right-column
                     address.address
                         address.address__location
-                            a.address__location-link(href='#') 0547 Leola Summit Apt. 220
+                            a.address__location-link(href='#') 
+                                span.address__link-text 0547 Leola Summit Apt. 220
                         address.address__phone
-                            a.address__phone-link(href='tel:582-261-9142') 582-261-9142
+                            a.address__phone-link(href='tel:582-261-9142') 
+                                span.address__link-text 582-261-9142
                         address.address__email
-                            a.address__email-link(href='mailto:mozelle_heathcote@hotmail.com') mozelle_heathcote@hotmail.com
+                            a.address__email-link(href='mailto:mozelle_heathcote@hotmail.com') 
+                                span.address__link-text mozelle_heathcote@hotmail.com
         script(src="main.min.js")

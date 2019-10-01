@@ -14,7 +14,7 @@
 
 .address__location-link {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   &:before {
     content: '';
@@ -24,6 +24,10 @@
     background-size: cover;
     margin-right: 8px;
   }
+}
+
+.address__link-text {
+  flex: 1;
 }
 
 .address__phone {

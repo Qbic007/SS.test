@@ -9,6 +9,8 @@
   left: 24px;
   right: 24px;
   bottom: 32px;
+  overflow: hidden;
+  max-height: 100%;
 }
 
 .pic-preview__title {
@@ -18,6 +20,7 @@
 
 .pic-preview__img-container {
   height: auto;
+  overflow: hidden;
 }
 
 .pic-preview__img {

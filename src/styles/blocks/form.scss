@@ -25,8 +25,7 @@
 }
 
 .form__input_text {
-  padding: 26px 24px 20px;
-  height: 24px;
+  padding: 20px 24px 14px;
   font-size: 12px;
   color: $color-text-dark;
   font-weight: 600;
@@ -59,8 +58,9 @@
   display: none;
   position: absolute;
   top: 50%;
-  right: -216px;
-  max-width: 184px;
+  right: -256px;
+  max-height: 64px;
+  max-width: 240px;
   border-radius: 1px;
   box-shadow: 0 8px 24px rgba(57, 96, 204, 0.48);
   background-color: white;
@@ -69,7 +69,6 @@
   line-height: 12px;
   color: $color-text-dark;
   font-weight: 600;
-  height: 40px;
   transform: translateY(-20px);
   
   @include tablets() {
@@ -93,15 +92,16 @@
     width: 6px;
     background-color: white;
     left: -3px;
-    top: 50%;
+    top: 20px;
     transform: translateY(-3px) rotate(45deg);
   }
 }
 
 .form__input-error {
   display: flex;
-  align-items: center;
-  padding: 0 8px;
+  align-items: flex-start;
+  max-height: 48px;
+  overflow: hidden;
 
   &:before {
     content: '';
@@ -112,6 +112,10 @@
     margin-right: 8px;
     transform: translateY(-2px);
   }
+}
+
+.form__input-error-text {
+  flex: 1;
 }
 
 .form__input-checkbox-label {
