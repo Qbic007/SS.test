@@ -4,6 +4,10 @@
   width: 42%;
   max-width: 352px;
   min-width: 200px;
+  
+  @include tablets() {
+    width: 80%;    
+  }
 }
 
 .form__input-container {
@@ -80,8 +84,8 @@
     top: unset;
     left: unset;
     transform: unset;
+    max-width: unset;
     width: 100%;
-    margin-top: 8px;
   }
 
   &.form__input-error-container_show {
@@ -99,9 +103,7 @@
     transform: translateY(-3px) rotate(45deg);
 
     @include tablets() {
-      top: -3px;
-      left: 50%;
-      transform: translateX(-3px) rotate(45deg);
+      content: unset;
     }
   }
 }
