@@ -52,8 +52,8 @@ $(document).ready(function () {
             mainMenu.hide();
             overlayContainer.hide();
             let width = document.body.clientWidth;
-            zIndex = width <= 992 ? 10 : 0;
-            overlay.css('z-index', zIndex);
+            // zIndex = width <= 992 ? 10 : 0;
+            // overlay.css('z-index', zIndex);
         });
     });
 

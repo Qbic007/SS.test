@@ -7,7 +7,7 @@
   top: 0;
   
   @include laptop() {
-    z-index: 10;
+    width: 0;
   }
 }
 
@@ -26,6 +26,9 @@
   
   @include laptop() {
     flex-direction: column-reverse;
+    width: 0;
+    overflow: unset;
+    align-items: flex-start;
   }
 }
 
@@ -39,6 +42,7 @@
     flex: 1;
     display: none;
     height: 100%;
+    width: 100vw;
     background-color: white;
   }
 }

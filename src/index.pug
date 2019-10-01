@@ -55,70 +55,7 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="stylesheet" href="main.min.css")
-    body
-        .overlay
-            .overlay__wrapper
-                aside.aside__box
-                    .aside.aside_left
-                        .aside__container.aside__container_menu
-                            a.aside__link.aside__link_menu(href="#")
-                            a.aside__link.aside__link_cross(href="#")
-                        .aside__container.aside__container_scrollup
-                            a.aside__link.aside__link_scrollup(href="#")
-                .overlay__container
-                    .main-menu
-                        .main-menu__container
-                            .main-menu__main-column
-                                ul.main-menu__greater-points
-                                    li.main-menu__greater-point
-                                        a(href='#') Features
-                                    li.main-menu__greater-point
-                                        a(href='#') Blog
-                                    li.main-menu__greater-point
-                                        a(href='#') About
-                                    li.main-menu__greater-point
-                                        a(href='#') Prices
-                                ul.main-menu__standart-points
-                                    li.main-menu__standart-point
-                                        a(href='#') Documentation
-                                    li.main-menu__standart-point
-                                        a(href='#') Buy
-                                    li.main-menu__standart-point
-                                        a(href='#') Download
-                                    li.main-menu__standart-point
-                                        a(href='#') Contact us
-                                    li.main-menu__standart-point.main-menu__standart-point_pink
-                                        a(href='#') Sign out
-                            .main-menu__info-column
-                                .main-menu__info-container
-                                    .main-menu__logo-container
-                                        +logo()
-                                    .main-menu__caption-container
-                                        .main-menu__caption-title Advertising Relationships Vs Business Decisions
-                                        .main-menu__caption-content.
-                                            When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video game Paperboy, so I knew I had what it took to get the job done. But, its just not that easy.
-                                .main-menu__address-container
-                                    address.address
-                                        address.address__location
-                                            a.address__location-link(href='#') 0547 Leola Summit Apt. 220
-                                        address.address__phone
-                                            a.address__phone-link(href='tel:582-261-9142') 582-261-9142
-                                        address.address__email
-                                                a.address__email-link(href='mailto:mozelle_heathcote@hotmail.com') mozelle_heathcote@hotmail.com
-                aside.aside__box.aside__box_right
-                    .aside.aside_right
-                        .aside__container.aside__container_login
-                            a.aside__link.aside__link_login(href="#")
-                                .aside__login-img-container
-                                    img.aside__login-img(src="images/content.jpg")
-                        .aside__container.aside__container_search
-                            a.aside__link.aside__link_search(href="#")
-                        .aside__socials
-                            a.aside__socials-link(href="https://instagram.com" target="blank") Instagram
-                            a.aside__socials-link(href="https://twitter.com" target="blank") Twitter
-                            a.aside__socials-link(href="https://facebook.com" target="blank") Facebook
-                        .aside__container.aside__container_copyright
-                            a.aside__link.aside__link_copyright(href="#")
+    body        
         .container            
             header.header
                 .header__left-column
@@ -359,4 +296,67 @@ html(lang="ru")
                         address.address__email
                             a.address__email-link(href='mailto:mozelle_heathcote@hotmail.com') 
                                 span.address__link-text mozelle_heathcote@hotmail.com
+        .overlay
+                    .overlay__wrapper
+                        aside.aside__box
+                            .aside.aside_left
+                                .aside__container.aside__container_menu
+                                    a.aside__link.aside__link_menu(href="#")
+                                    a.aside__link.aside__link_cross(href="#")
+                                .aside__container.aside__container_scrollup
+                                    a.aside__link.aside__link_scrollup(href="#")
+                        .overlay__container
+                            .main-menu
+                                .main-menu__container
+                                    .main-menu__main-column
+                                        ul.main-menu__greater-points
+                                            li.main-menu__greater-point
+                                                a(href='#') Features
+                                            li.main-menu__greater-point
+                                                a(href='#') Blog
+                                            li.main-menu__greater-point
+                                                a(href='#') About
+                                            li.main-menu__greater-point
+                                                a(href='#') Prices
+                                        ul.main-menu__standart-points
+                                            li.main-menu__standart-point
+                                                a(href='#') Documentation
+                                            li.main-menu__standart-point
+                                                a(href='#') Buy
+                                            li.main-menu__standart-point
+                                                a(href='#') Download
+                                            li.main-menu__standart-point
+                                                a(href='#') Contact us
+                                            li.main-menu__standart-point.main-menu__standart-point_pink
+                                                a(href='#') Sign out
+                                    .main-menu__info-column
+                                        .main-menu__info-container
+                                            .main-menu__logo-container
+                                                +logo()
+                                            .main-menu__caption-container
+                                                .main-menu__caption-title Advertising Relationships Vs Business Decisions
+                                                .main-menu__caption-content.
+                                                    When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video game Paperboy, so I knew I had what it took to get the job done. But, its just not that easy.
+                                        .main-menu__address-container
+                                            address.address
+                                                address.address__location
+                                                    a.address__location-link(href='#') 0547 Leola Summit Apt. 220
+                                                address.address__phone
+                                                    a.address__phone-link(href='tel:582-261-9142') 582-261-9142
+                                                address.address__email
+                                                        a.address__email-link(href='mailto:mozelle_heathcote@hotmail.com') mozelle_heathcote@hotmail.com
+                        aside.aside__box.aside__box_right
+                            .aside.aside_right
+                                .aside__container.aside__container_login
+                                    a.aside__link.aside__link_login(href="#")
+                                        .aside__login-img-container
+                                            img.aside__login-img(src="images/content.jpg")
+                                .aside__container.aside__container_search
+                                    a.aside__link.aside__link_search(href="#")
+                                .aside__socials
+                                    a.aside__socials-link(href="https://instagram.com" target="blank") Instagram
+                                    a.aside__socials-link(href="https://twitter.com" target="blank") Twitter
+                                    a.aside__socials-link(href="https://facebook.com" target="blank") Facebook
+                                .aside__container.aside__container_copyright
+                                    a.aside__link.aside__link_copyright(href="#")
         script(src="main.min.js")
